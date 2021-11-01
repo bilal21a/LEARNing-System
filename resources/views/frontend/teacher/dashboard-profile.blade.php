@@ -1,35 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-
-<!-- Mirrored from demo.afracode.com/eduline/teacher/dashboard-profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Oct 2021 10:13:46 GMT -->
-<head>
-    <title>Eduline</title>
-    <meta charset="UTF-8" />
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta name="theme-color" content="#ffffff">
-    <meta name="msapplication-TileColor" content="#9f00a7">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <base >
-    <!--
-    ========================================================================
-    EXCLUSIVE ON themeforest.net
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Template Name   : Eduline - Education HTML Template
-    Author          : AfraCode
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Copyright (c) 2019 - AfraCode
-    ========================================================================
-    -->
-    <link rel="shortcut icon" href="http://../favicon.ico" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,300,500,600,700,900&amp;display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../..//assets/css/plugins.min.css" />
-    <link rel="stylesheet" href="../../..//assets/css/styles.css" />
-</head>
-
-<body>
+@extends('index')
+@section('content')
     <!-- Loading -->
     <div id="preloader" class="preloader">
         <div class="preloader-inner">
@@ -864,11 +834,7 @@
     <!--/-->
 </div>
     </div>
-    <script src="../../..//assets/js/jquery.min.js"></script>
-    <script src="../../..//assets/js/plugins.min.js"></script>
-    <script src="../../..//assets/js/main-scripts.js"></script>
-    <script src="../../..//assets/js/dashboard.js"></script>
-</body>
-
-<!-- Mirrored from demo.afracode.com/eduline/teacher/dashboard-profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Oct 2021 10:13:46 GMT -->
-</html>
+    @endsection
+    @section('js_before')
+    <script src="{{asset('frontend/assets/js/dashboard.js')}}"></script>
+    @endsection
