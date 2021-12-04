@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,300,500,600,700,900&amp;display=swap">
     <link rel="stylesheet" href="{{asset('frontend/assets/css/plugins.min.css')}}" />
     <link rel="stylesheet" href="{{asset('frontend/assets/css/styles.css')}}" />
+    @yield('css')
+
 </head>
 
 <body>
