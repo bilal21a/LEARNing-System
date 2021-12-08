@@ -16,7 +16,7 @@
 <body>
     @yield('inline_css')
 
-    {{-- @include('layouts.partials.header') --}}
+    @include('frontend.layouts.partials.header')
 
     @yield('content')
 
