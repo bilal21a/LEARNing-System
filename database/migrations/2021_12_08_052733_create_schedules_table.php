@@ -16,13 +16,20 @@ class CreateSchedulesTable extends Migration
         Schema::create('schedules', function (Blueprint $table) {
             $table->id();
             $table->foreignId('teacher_id')->constrained('users');
-            $table->binary('mon');
-            $table->binary('tue');
-            $table->binary('wed');
-            $table->binary('thu');
-            $table->binary('fri');
-            $table->binary('sat');
-            $table->binary('sun');
+            $table->integer('mon_start');
+            $table->integer('mon_end');
+            $table->integer('tue_start');
+            $table->integer('tue_end');
+            $table->integer('wed_start');
+            $table->integer('wed_end');
+            $table->integer('thu_start');
+            $table->integer('thu_end');
+            $table->integer('fri_start');
+            $table->integer('fri_end');
+            $table->integer('sat_start');
+            $table->integer('sat_end');
+            $table->integer('sun_start');
+            $table->integer('sun_end');
             $table->timestamps();
         });
     }
