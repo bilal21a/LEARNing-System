@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\HrsTime;
 use App\Models\Schedule;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -10,7 +11,9 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        return view('frontend.teacher.dashboard-classrooms');
+        $time_all_day = HrsTime::select('name','value')->get()->ToArray();
+        // dd($time_all_day);
+        return view('frontend.teacher.dashboard-classrooms',compact('time_all_day'));
     }
     public function schedule_save(Request $request)
     {

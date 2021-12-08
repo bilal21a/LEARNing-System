@@ -116,6 +116,7 @@
                                                 </div>
                                             </div>
                                             --}}
+
                                             <div class="col-12">
                                                 <hr />
                                             </div>
@@ -130,17 +131,10 @@
                                                                         <label for="input-type" class="form-label">Start</label>
                                                                         <div class="input-select">
                                                                             <select class="el-select2-select-hour" name="year" required>
-                                                                                <option selected disabled>Start</option>
-                                                                                <option value="2021">2021</option>
-                                                                                <option value="2022">2022</option>
-                                                                                <option value="2023">2023</option>
-                                                                                <option value="2024">2024</option>
-                                                                                <option value="2025">2025</option>
-                                                                                <option value="2026">2026</option>
-                                                                                <option value="2027">2027</option>
-                                                                                <option value="2028">2028</option>
-                                                                                <option value="2029">2029</option>
-                                                                                <option value="2030">2030</option>
+                                                                                <option selected disabled>start time</option>
+                                                                                @foreach ($time_all_day as $time)
+                                                                                    <option value="{{ $time['value'] }}">{{ $time['name'] }}</option>
+                                                                                @endforeach
                                                                             </select>
                                                                         </div>
                                                                     </div>
@@ -150,19 +144,10 @@
                                                                         <label for="input-type" class="form-label">End</label>
                                                                         <div class="input-select">
                                                                             <select class="el-select2-select-hour" name="month" required>
-                                                                                <option selected disabled>End</option>
-                                                                                <option value="01">January</option>
-                                                                                <option value="02">February</option>
-                                                                                <option value="03">March</option>
-                                                                                <option value="04">April</option>
-                                                                                <option value="05">May</option>
-                                                                                <option value="06">June</option>
-                                                                                <option value="07">July</option>
-                                                                                <option value="08">August</option>
-                                                                                <option value="09">September</option>
-                                                                                <option value="10">October</option>
-                                                                                <option value="11">November</option>
-                                                                                <option value="12">December</option>
+                                                                                <option selected disabled>end time</option>
+                                                                                @foreach ($time_all_day as $time)
+                                                                                    <option value="{{ $time['value'] }}">{{ $time['name'] }}</option>
+                                                                                @endforeach
                                                                             </select>
                                                                         </div>
                                                                     </div>
@@ -177,17 +162,10 @@
                                                                         <label for="input-type" class="form-label">Start</label>
                                                                         <div class="input-select">
                                                                             <select class="el-select2-select-hour" name="year" required>
-                                                                                <option selected disabled>Start</option>
-                                                                                <option value="2021">2021</option>
-                                                                                <option value="2022">2022</option>
-                                                                                <option value="2023">2023</option>
-                                                                                <option value="2024">2024</option>
-                                                                                <option value="2025">2025</option>
-                                                                                <option value="2026">2026</option>
-                                                                                <option value="2027">2027</option>
-                                                                                <option value="2028">2028</option>
-                                                                                <option value="2029">2029</option>
-                                                                                <option value="2030">2030</option>
+                                                                                <option selected disabled>start time</option>
+                                                                                @foreach ($time_all_day as $time)
+                                                                                    <option value="{{ $time['value'] }}">{{ $time['name'] }}</option>
+                                                                                @endforeach
                                                                             </select>
                                                                         </div>
                                                                     </div>
@@ -197,25 +175,172 @@
                                                                         <label for="input-type" class="form-label">End</label>
                                                                         <div class="input-select">
                                                                             <select class="el-select2-select-hour" name="month" required>
-                                                                                <option selected disabled>End</option>
-                                                                                <option value="01">January</option>
-                                                                                <option value="02">February</option>
-                                                                                <option value="03">March</option>
-                                                                                <option value="04">April</option>
-                                                                                <option value="05">May</option>
-                                                                                <option value="06">June</option>
-                                                                                <option value="07">July</option>
-                                                                                <option value="08">August</option>
-                                                                                <option value="09">September</option>
-                                                                                <option value="10">October</option>
-                                                                                <option value="11">November</option>
-                                                                                <option value="12">December</option>
+                                                                                <option selected disabled>end time</option>
+                                                                                @foreach ($time_all_day as $time)
+                                                                                    <option value="{{ $time['value'] }}">{{ $time['name'] }}</option>
+                                                                                @endforeach
                                                                             </select>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </li>
+                                                        <li>
+                                                            <h4>Wednesday</h4>
+                                                            <div class="row row-sm">
+                                                                <div class="col-12 col-sm-12 col-md-6">
+                                                                    <div class="form-item">
+                                                                        <label for="input-type" class="form-label">Start</label>
+                                                                        <div class="input-select">
+                                                                            <select class="el-select2-select-hour" name="year" required>
+                                                                                <option selected disabled>start time</option>
+                                                                                @foreach ($time_all_day as $time)
+                                                                                    <option value="{{ $time['value'] }}">{{ $time['name'] }}</option>
+                                                                                @endforeach
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 col-sm-12 col-md-6">
+                                                                    <div class="form-item">
+                                                                        <label for="input-type" class="form-label">End</label>
+                                                                        <div class="input-select">
+                                                                            <select class="el-select2-select-hour" name="month" required>
+                                                                                <option selected disabled>end time</option>
+                                                                                @foreach ($time_all_day as $time)
+                                                                                    <option value="{{ $time['value'] }}">{{ $time['name'] }}</option>
+                                                                                @endforeach
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <h4>Thursday</h4>
+                                                            <div class="row row-sm">
+                                                                <div class="col-12 col-sm-12 col-md-6">
+                                                                    <div class="form-item">
+                                                                        <label for="input-type" class="form-label">Start</label>
+                                                                        <div class="input-select">
+                                                                            <select class="el-select2-select-hour" name="year" required>
+                                                                                <option selected disabled>start time</option>
+                                                                                @foreach ($time_all_day as $time)
+                                                                                    <option value="{{ $time['value'] }}">{{ $time['name'] }}</option>
+                                                                                @endforeach
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 col-sm-12 col-md-6">
+                                                                    <div class="form-item">
+                                                                        <label for="input-type" class="form-label">End</label>
+                                                                        <div class="input-select">
+                                                                            <select class="el-select2-select-hour" name="month" required>
+                                                                                <option selected disabled>end time</option>
+                                                                                @foreach ($time_all_day as $time)
+                                                                                    <option value="{{ $time['value'] }}">{{ $time['name'] }}</option>
+                                                                                @endforeach
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <h4>Friday</h4>
+                                                            <div class="row row-sm">
+                                                                <div class="col-12 col-sm-12 col-md-6">
+                                                                    <div class="form-item">
+                                                                        <label for="input-type" class="form-label">Start</label>
+                                                                        <div class="input-select">
+                                                                            <select class="el-select2-select-hour" name="year" required>
+                                                                                <option selected disabled>start time</option>
+                                                                                @foreach ($time_all_day as $time)
+                                                                                    <option value="{{ $time['value'] }}">{{ $time['name'] }}</option>
+                                                                                @endforeach
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 col-sm-12 col-md-6">
+                                                                    <div class="form-item">
+                                                                        <label for="input-type" class="form-label">End</label>
+                                                                        <div class="input-select">
+                                                                            <select class="el-select2-select-hour" name="month" required>
+                                                                                <option selected disabled>end time</option>
+                                                                                @foreach ($time_all_day as $time)
+                                                                                    <option value="{{ $time['value'] }}">{{ $time['name'] }}</option>
+                                                                                @endforeach
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <h4>Saturday</h4>
+                                                            <div class="row row-sm">
+                                                                <div class="col-12 col-sm-12 col-md-6">
+                                                                    <div class="form-item">
+                                                                        <label for="input-type" class="form-label">Start</label>
+                                                                        <div class="input-select">
+                                                                            <select class="el-select2-select-hour" name="year" required>
+                                                                                <option selected disabled>start time</option>
+                                                                                @foreach ($time_all_day as $time)
+                                                                                    <option value="{{ $time['value'] }}">{{ $time['name'] }}</option>
+                                                                                @endforeach
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 col-sm-12 col-md-6">
+                                                                    <div class="form-item">
+                                                                        <label for="input-type" class="form-label">End</label>
+                                                                        <div class="input-select">
+                                                                            <select class="el-select2-select-hour" name="month" required>
+                                                                                <option selected disabled>end time</option>
+                                                                                @foreach ($time_all_day as $time)
+                                                                                    <option value="{{ $time['value'] }}">{{ $time['name'] }}</option>
+                                                                                @endforeach
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <h4>Sunday</h4>
+                                                            <div class="row row-sm">
+                                                                <div class="col-12 col-sm-12 col-md-6">
+                                                                    <div class="form-item">
+                                                                        <label for="input-type" class="form-label">Start</label>
+                                                                        <div class="input-select">
+                                                                            <select class="el-select2-select-hour" name="year" required>
+                                                                                <option selected disabled>start time</option>
+                                                                                @foreach ($time_all_day as $time)
+                                                                                    <option value="{{ $time['value'] }}">{{ $time['name'] }}</option>
+                                                                                @endforeach
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 col-sm-12 col-md-6">
+                                                                    <div class="form-item">
+                                                                        <label for="input-type" class="form-label">End</label>
+                                                                        <div class="input-select">
+                                                                            <select class="el-select2-select-hour" name="month" required>
+                                                                                <option selected disabled>end time</option>
+                                                                                @foreach ($time_all_day as $time)
+                                                                                    <option value="{{ $time['value'] }}">{{ $time['name'] }}</option>
+                                                                                @endforeach
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+
                                                     </ul>
                                                 </div>
                                             </div>
