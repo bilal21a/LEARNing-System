@@ -14,6 +14,7 @@ class DashboardController extends Controller
     }
     public function schedule_save(Request $request)
     {
+        dd($request->all());
         $schedule = new Schedule();
         $schedule->name=$request->cname;
         $schedule->teacher_id=Auth::user()->id;
