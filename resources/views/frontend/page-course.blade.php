@@ -34,84 +34,105 @@
                                     <h2>Schedule</h2>
                                 </div>
                                 <div class="row row-xs">
+                                    @if (($mon_start != 'no time') && ($mon_end != 'no time'))
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                         <div class="item">
                                             <div class="row row-xs">
                                                 <div class="col">
                                                     <span class="week">Monday</span>
-                                                    <span class="date"> ( may 1 ) </span>
                                                 </div>
                                                 <div class="col">
-                                                    <span class="hour">{{ $schedules->mon_start }} - {{ $schedules->mon_end }}</span>
+                                                    <span class="hour">{{ $mon_start }} - {{ $mon_end }}</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    @endif
+                                    @if (($tue_start != 'no time') && ($tue_end != 'no time'))
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <div class="item">
+                                            <div class="row row-xs">
+                                                <div class="col">
+                                                    <span class="week">Tuesday</span>
+                                                </div>
+                                                <div class="col">
+                                                    <span class="hour">{{ $tue_start }} - {{ $tue_end }}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @endif
+                                    @if (($wed_start != 'no time') && ($wed_end != 'no time'))
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <div class="item">
+                                            <div class="row row-xs">
+                                                <div class="col">
+                                                    <span class="week">Wednesday</span>
+                                                </div>
+                                                <div class="col">
+                                                    <span class="hour">{{ $wed_start }} - {{ $wed_end }}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @endif
+                                    @if (($thu_start != 'no time') && ($thu_end != 'no time'))
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <div class="item">
+                                            <div class="row row-xs">
+                                                <div class="col">
+                                                    <span class="week">Thursday</span>
+                                                </div>
+                                                <div class="col">
+                                                    <span class="hour">{{ $thu_start }} - {{ $thu_end }}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @endif
+                                    @if (($fri_start != 'no time') && ($fri_end != 'no time'))
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <div class="item">
+                                            <div class="row row-xs">
+                                                <div class="col">
+                                                    <span class="week">Friday</span>
+                                                </div>
+                                                <div class="col">
+                                                    <span class="hour">{{ $fri_start }} - {{ $fri_end }}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @endif
+                                    @if (($sat_start != 'no time') && ($sat_end != 'no time'))
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                        <div class="item">
+                                            <div class="row row-xs">
+                                                <div class="col">
+                                                    <span class="week">Satursday</span>
+                                                </div>
+                                                <div class="col">
+                                                    <span class="hour">{{ $sat_start }} - {{ $sat_end }}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @endif
+                                    @if (($sun_start != 'no time') && ($sun_end != 'no time'))
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                         <div class="item">
                                             <div class="row row-xs">
                                                 <div class="col">
                                                     <span class="week">Sunday</span>
-                                                    <span class="date"> ( may 2 ) </span>
                                                 </div>
                                                 <div class="col">
-                                                    <span class="hour">15:00 - 16:00</span>
+                                                    <span class="hour">{{ $sun_start }} - {{ $sun_end }}</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                        <div class="item">
-                                            <div class="row row-xs">
-                                                <div class="col">
-                                                    <span class="week">Sunday</span>
-                                                    <span class="date"> ( may 2 ) </span>
-                                                </div>
-                                                <div class="col">
-                                                    <span class="hour">15:00 - 16:00</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                        <div class="item">
-                                            <div class="row row-xs">
-                                                <div class="col">
-                                                    <span class="week">Sunday</span>
-                                                    <span class="date"> ( may 3 ) </span>
-                                                </div>
-                                                <div class="col">
-                                                    <span class="hour">15:00 - 16:00</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                        <div class="item">
-                                            <div class="row row-xs">
-                                                <div class="col">
-                                                    <span class="week">Sunday</span>
-                                                    <span class="date"> ( may 4 ) </span>
-                                                </div>
-                                                <div class="col">
-                                                    <span class="hour">15:00 - 16:00</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                        <div class="item">
-                                            <div class="row row-xs">
-                                                <div class="col">
-                                                    <span class="week">Sunday</span>
-                                                    <span class="date"> ( may 4 ) </span>
-                                                </div>
-                                                <div class="col">
-                                                    <span class="hour">15:00 - 16:00</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    @endif
+
                                 </div>
                             </div>
                         </div>
