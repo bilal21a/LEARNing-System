@@ -11,22 +11,23 @@ class DashboardController extends Controller
 {
     public function index()
     {
+        $teacher_id= Auth::user()->id;
         $time_all_day = HrsTime::select('name','value')->get()->ToArray();
-        // dd($time_all_day);
-        return view('frontend.teacher.dashboard-classrooms',compact('time_all_day'));
+        $schedule =  Schedule::firstOrCreate(['teacher_id' => $teacher_id]);
+        return view('frontend.teacher.dashboard-classrooms',compact('time_all_day','schedule'));
     }
-    public function schedule_save(Request $request)
+    public function schedule_save($field,$time)
     {
-        dd($request->all());
-        $schedule = new Schedule();
-        $schedule->name=$request->cname;
-        $schedule->teacher_id=Auth::user()->id;
-        $schedule->year=$request->year;
-        $schedule->month=$request->month;
-        $schedule->days=serialize($request->days);
-        $schedule->time=serialize($request->available_time);
-        $schedule->save();
+        try {
+            $teacher_id= Auth::user()->id;
+            $schedule =  Schedule::firstOrCreate(['teacher_id' => $teacher_id]);
+            $schedule->$field=$time;
+            $schedule->save();
 
-        return redirect()->back();
+            return $field." value has been updated";
+        } catch (\Throwable $th) {
+            return $th->getMessage();
+        }
+
     }
 }

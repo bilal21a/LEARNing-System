@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BookTeacherController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 /*
@@ -21,10 +22,11 @@ Route::get('/2', function () {
 
 Route::group(['namespace' => 'teacher'], function () {
     Route::get('add_schedule', [DashboardController::class, 'index'])->name('add_schedule');
-    Route::post('schedule_save', [DashboardController::class, 'schedule_save'])->name('schedule_save');
+    Route::get('schedule_save/{field}/{time}', [DashboardController::class, 'schedule_save'])->name('schedule_save');
 
 });
 
+Route::get('book_teacher', [BookTeacherController::class, 'index'])->name('book_teacher');
 
 
 

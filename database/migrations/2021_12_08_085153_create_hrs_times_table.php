@@ -15,8 +15,8 @@ class CreateHrsTimesTable extends Migration
     {
         Schema::create('hrs_times', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->integer('value');
+            $table->string('name')->nullable();
+            $table->integer('value')->nullable();
             $table->timestamps();
         });
     }

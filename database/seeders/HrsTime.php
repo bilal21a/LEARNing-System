@@ -18,6 +18,10 @@ class HrsTime extends Seeder
 
         $hrstime =  [
             [
+              'name' => 'no time',
+              'value' => 100,
+            ],
+            [
               'name' => '12:00 am',
               'value' => 0,
             ],

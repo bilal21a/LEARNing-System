@@ -15,8 +15,8 @@ class CreateBookedSchedulesTable extends Migration
     {
         Schema::create('booked_schedules', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('student_id')->constrained('users');
-            $table->foreignId('schedule_id')->constrained('schedules');
+            $table->foreignId('student_id')->constrained('users')->nullable();
+            $table->foreignId('schedule_id')->constrained('schedules')->nullable();
             $table->timestamps();
         });
     }

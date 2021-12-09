@@ -38,11 +38,11 @@
                                         <div class="item">
                                             <div class="row row-xs">
                                                 <div class="col">
-                                                    <span class="week">Sunday</span>
+                                                    <span class="week">Monday</span>
                                                     <span class="date"> ( may 1 ) </span>
                                                 </div>
                                                 <div class="col">
-                                                    <span class="hour">15:00 - 16:00</span>
+                                                    <span class="hour">{{ $schedules->mon_start }} - {{ $schedules->mon_end }}</span>
                                                 </div>
                                             </div>
                                         </div>

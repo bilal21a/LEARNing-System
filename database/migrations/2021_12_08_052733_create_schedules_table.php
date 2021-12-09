@@ -16,20 +16,20 @@ class CreateSchedulesTable extends Migration
         Schema::create('schedules', function (Blueprint $table) {
             $table->id();
             $table->foreignId('teacher_id')->constrained('users');
-            $table->integer('mon_start');
-            $table->integer('mon_end');
-            $table->integer('tue_start');
-            $table->integer('tue_end');
-            $table->integer('wed_start');
-            $table->integer('wed_end');
-            $table->integer('thu_start');
-            $table->integer('thu_end');
-            $table->integer('fri_start');
-            $table->integer('fri_end');
-            $table->integer('sat_start');
-            $table->integer('sat_end');
-            $table->integer('sun_start');
-            $table->integer('sun_end');
+            $table->integer('mon_start')->default(100)->nullable();
+            $table->integer('mon_end')->default(100)->nullable();
+            $table->integer('tue_start')->default(100)->nullable();
+            $table->integer('tue_end')->default(100)->nullable();
+            $table->integer('wed_start')->default(100)->nullable();
+            $table->integer('wed_end')->default(100)->nullable();
+            $table->integer('thu_start')->default(100)->nullable();
+            $table->integer('thu_end')->default(100)->nullable();
+            $table->integer('fri_start')->default(100)->nullable();
+            $table->integer('fri_end')->default(100)->nullable();
+            $table->integer('sat_start')->default(100)->nullable();
+            $table->integer('sat_end')->default(100)->nullable();
+            $table->integer('sun_start')->default(100)->nullable();
+            $table->integer('sun_end')->default(100)->nullable();
             $table->timestamps();
         });
     }
