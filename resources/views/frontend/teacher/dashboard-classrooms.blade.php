@@ -19,13 +19,15 @@
 		}
 
 		ul.tabs li.current{
-			background: #ededed;
+			/* background: #ededed; */
+            background: #bdc5fc;
+            border-radius: 25px;
 			color: #222;
 		}
 
 		.tab-content{
 			display: none;
-			background: #ededed;
+			/* background: #ededed; */
 			padding: 15px;
 		}
 
@@ -133,39 +135,279 @@
                                                 <div class="container">
 
                                                     <ul class="tabs">
-                                                        <li class="tab-link current" data-tab="tab-1">Tab One</li>
-                                                        <li class="tab-link" data-tab="tab-2">Tab Two</li>
-                                                        <li class="tab-link" data-tab="tab-3">Tab Three</li>
-                                                        <li class="tab-link" data-tab="tab-4">Tab Four</li>
-                                                        <li class="tab-link" data-tab="tab-5">Tab 5</li>
-                                                        <li class="tab-link" data-tab="tab-6">Tab 6</li>
-                                                        <li class="tab-link" data-tab="tab-7">Tab 7</li>
+                                                        <li class="tab-link current" data-tab="tab-1">Monday</li>
+                                                        <li class="tab-link" data-tab="tab-2">Tuesday</li>
+                                                        <li class="tab-link" data-tab="tab-3">Wednesday</li>
+                                                        <li class="tab-link" data-tab="tab-4">Thursday</li>
+                                                        <li class="tab-link" data-tab="tab-5">Friday</li>
+                                                        <li class="tab-link" data-tab="tab-6">Saturday</li>
+                                                        <li class="tab-link" data-tab="tab-7">Sunday</li>
                                                     </ul>
 
                                                     <div id="tab-1" class="tab-content current">
-                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                        <div id="form-details-of-classrooms">
+                                                            <ul>
+                                                                <li>
+                                                                    <h4>Monday</h4>
+                                                                    <div class="row row-sm">
+                                                                        <div class="col-12 col-sm-12 col-md-6">
+                                                                            <div class="form-item">
+                                                                                <label for="input-type" class="form-label">Start</label>
+                                                                                <div class="input-select">
+                                                                                    <input type="hidden" class="form-control" value="mon_start">
+                                                                                    <select class="el-select2-select-hour hour_time " name="hour_time" required>
+                                                                                        @foreach ($time_all_day as $time)
+                                                                                            <option value="{{ $time['value'] }}" {{ $time['value'] == $schedule->mon_start ? 'selected' : '' }} >{{ $time['name'] }}</option>
+                                                                                        @endforeach
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12 col-sm-12 col-md-6">
+                                                                            <div class="form-item">
+                                                                                <label for="input-type" class="form-label">End</label>
+                                                                                <div class="input-select">
+                                                                                    <input type="hidden" class="form-control" value="mon_end">
+                                                                                    <select class="el-select2-select-hour hour_time" name="hour_time" required>
+                                                                                        @foreach ($time_all_day as $time)
+                                                                                            <option value="{{ $time['value'] }}" {{ $time['value'] == $schedule->mon_end ? 'selected' : '' }}>{{ $time['name'] }}</option>
+                                                                                        @endforeach
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                     <div id="tab-2" class="tab-content">
-                                                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                        <div id="form-details-of-classrooms">
+                                                            <ul>
+                                                                <li>
+                                                                    <h4>Tuesday</h4>
+                                                                    <div class="row row-sm">
+                                                                        <div class="col-12 col-sm-12 col-md-6">
+                                                                            <div class="form-item">
+                                                                                <label for="input-type" class="form-label">Start</label>
+                                                                                <div class="input-select">
+                                                                                    <input type="hidden" class="form-control" value="tue_start">
+                                                                                    <select class="el-select2-select-hour hour_time " name="hour_time" required>
+                                                                                        @foreach ($time_all_day as $time)
+                                                                                            <option value="{{ $time['value'] }}" {{ $time['value'] == $schedule->tue_start ? 'selected' : '' }}>{{ $time['name'] }}</option>
+                                                                                        @endforeach
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12 col-sm-12 col-md-6">
+                                                                            <div class="form-item">
+                                                                                <label for="input-type" class="form-label">End</label>
+                                                                                <div class="input-select">
+                                                                                    <input type="hidden" class="form-control" value="tue_end">
+                                                                                    <select class="el-select2-select-hour hour_time" name="hour_time" required>
+                                                                                        @foreach ($time_all_day as $time)
+                                                                                            <option value="{{ $time['value'] }}" {{ $time['value'] == $schedule->tue_end ? 'selected' : '' }}>{{ $time['name'] }}</option>
+                                                                                        @endforeach
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                     <div id="tab-3" class="tab-content">
-                                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                                        <div id="form-details-of-classrooms">
+                                                            <ul>
+                                                                <li>
+                                                                    <h4>Wednesday</h4>
+                                                                    <div class="row row-sm">
+                                                                        <div class="col-12 col-sm-12 col-md-6">
+                                                                            <div class="form-item">
+                                                                                <label for="input-type" class="form-label">Start</label>
+                                                                                <div class="input-select">
+                                                                                    <input type="hidden" class="form-control" value="wed_start">
+                                                                                    <select class="el-select2-select-hour hour_time " name="hour_time" required>
+                                                                                        @foreach ($time_all_day as $time)
+                                                                                            <option value="{{ $time['value'] }}" {{ $time['value'] == $schedule->wed_start ? 'selected' : '' }}>{{ $time['name'] }}</option>
+                                                                                        @endforeach
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12 col-sm-12 col-md-6">
+                                                                            <div class="form-item">
+                                                                                <label for="input-type" class="form-label">End</label>
+                                                                                <div class="input-select">
+                                                                                    <input type="hidden" class="form-control" value="wed_end">
+                                                                                    <select class="el-select2-select-hour hour_time" name="hour_time" required>
+                                                                                        @foreach ($time_all_day as $time)
+                                                                                            <option value="{{ $time['value'] }}" {{ $time['value'] == $schedule->wed_end ? 'selected' : '' }}>{{ $time['name'] }}</option>
+                                                                                        @endforeach
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                     <div id="tab-4" class="tab-content">
-                                                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                        <div id="form-details-of-classrooms">
+                                                        <ul>
+                                                            <li>
+                                                                <h4>Thursday</h4>
+                                                                <div class="row row-sm">
+                                                                    <div class="col-12 col-sm-12 col-md-6">
+                                                                        <div class="form-item">
+                                                                            <label for="input-type" class="form-label">Start</label>
+                                                                            <div class="input-select">
+                                                                                <input type="hidden" class="form-control" value="thu_start">
+                                                                                <select class="el-select2-select-hour hour_time " name="hour_time" required>
+                                                                                    @foreach ($time_all_day as $time)
+                                                                                        <option value="{{ $time['value'] }}" {{ $time['value'] == $schedule->thu_start ? 'selected' : '' }}>{{ $time['name'] }}</option>
+                                                                                    @endforeach
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-sm-12 col-md-6">
+                                                                        <div class="form-item">
+                                                                            <label for="input-type" class="form-label">End</label>
+                                                                            <div class="input-select">
+                                                                                <input type="hidden" class="form-control" value="thu_end">
+                                                                                <select class="el-select2-select-hour hour_time" name="hour_time" required>
+                                                                                    @foreach ($time_all_day as $time)
+                                                                                        <option value="{{ $time['value'] }}" {{ $time['value'] == $schedule->thu_end ? 'selected' : '' }}>{{ $time['name'] }}</option>
+                                                                                    @endforeach
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                        </div>
                                                     </div>
                                                     <div id="tab-5" class="tab-content">
-                                                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                        <div id="form-details-of-classrooms">
+                                                            <ul>
+                                                                <li>
+                                                                    <h4>Friday</h4>
+                                                                    <div class="row row-sm">
+                                                                        <div class="col-12 col-sm-12 col-md-6">
+                                                                            <div class="form-item">
+                                                                                <label for="input-type" class="form-label">Start</label>
+                                                                                <div class="input-select">
+                                                                                    <input type="hidden" class="form-control" value="fri_start">
+                                                                                    <select class="el-select2-select-hour hour_time " name="hour_time" required>
+                                                                                        @foreach ($time_all_day as $time)
+                                                                                            <option value="{{ $time['value'] }}" {{ $time['value'] == $schedule->fri_start ? 'selected' : '' }}>{{ $time['name'] }}</option>
+                                                                                        @endforeach
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12 col-sm-12 col-md-6">
+                                                                            <div class="form-item">
+                                                                                <label for="input-type" class="form-label">End</label>
+                                                                                <div class="input-select">
+                                                                                    <input type="hidden" class="form-control" value="fri_end">
+                                                                                    <select class="el-select2-select-hour hour_time" name="hour_time" required>
+                                                                                        @foreach ($time_all_day as $time)
+                                                                                            <option value="{{ $time['value'] }}" {{ $time['value'] == $schedule->fri_end ? 'selected' : '' }}>{{ $time['name'] }}</option>
+                                                                                        @endforeach
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                     <div id="tab-6" class="tab-content">
-                                                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                        <div id="form-details-of-classrooms">
+                                                            <ul>
+                                                                <li>
+                                                                    <h4>Saturday</h4>
+                                                                    <div class="row row-sm">
+                                                                        <div class="col-12 col-sm-12 col-md-6">
+                                                                            <div class="form-item">
+                                                                                <label for="input-type" class="form-label">Start</label>
+                                                                                <div class="input-select">
+                                                                                    <input type="hidden" class="form-control" value="sat_start">
+                                                                                    <select class="el-select2-select-hour hour_time " name="hour_time" required>
+                                                                                        @foreach ($time_all_day as $time)
+                                                                                            <option value="{{ $time['value'] }}" {{ $time['value'] == $schedule->sat_start ? 'selected' : '' }}>{{ $time['name'] }}</option>
+                                                                                        @endforeach
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12 col-sm-12 col-md-6">
+                                                                            <div class="form-item">
+                                                                                <label for="input-type" class="form-label">End</label>
+                                                                                <div class="input-select">
+                                                                                    <input type="hidden" class="form-control" value="sat_end">
+                                                                                    <select class="el-select2-select-hour hour_time" name="hour_time" required>
+                                                                                        @foreach ($time_all_day as $time)
+                                                                                            <option value="{{ $time['value'] }}" {{ $time['value'] == $schedule->sat_end ? 'selected' : '' }}>{{ $time['name'] }}</option>
+                                                                                        @endforeach
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                     <div id="tab-7" class="tab-content">
-                                                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                        <div id="form-details-of-classrooms">
+                                                            <ul>
+                                                                <li>
+                                                                    <h4>Sunday</h4>
+                                                                    <div class="row row-sm">
+                                                                        <div class="col-12 col-sm-12 col-md-6">
+                                                                            <div class="form-item">
+                                                                                <label for="input-type" class="form-label">Start</label>
+                                                                                <div class="input-select">
+                                                                                    <input type="hidden" class="form-control" value="sun_start">
+                                                                                    <select class="el-select2-select-hour hour_time " name="hour_time" required>
+                                                                                        @foreach ($time_all_day as $time)
+                                                                                            <option value="{{ $time['value'] }}" {{ $time['value'] == $schedule->sun_start ? 'selected' : '' }}>{{ $time['name'] }}</option>
+                                                                                        @endforeach
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12 col-sm-12 col-md-6">
+                                                                            <div class="form-item">
+                                                                                <label for="input-type" class="form-label">End</label>
+                                                                                <div class="input-select">
+                                                                                    <input type="hidden" class="form-control" value="sun_end">
+                                                                                    <select class="el-select2-select-hour hour_time" name="hour_time" required>
+                                                                                        @foreach ($time_all_day as $time)
+                                                                                            <option value="{{ $time['value'] }}" {{ $time['value'] == $schedule->sun_end ? 'selected' : '' }}>{{ $time['name'] }}</option>
+                                                                                        @endforeach
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
                                                     </div>
 
-                                                </div><!-- container -->
-
+                                                </div>
+                                                <!-- container -->
+{{--
                                                 <div id="form-details-of-classrooms">
                                                     <ul>
                                                         <li>
@@ -387,7 +629,7 @@
                                                         </li>
 
                                                     </ul>
-                                                </div>
+                                                </div> --}}
                                             </div>
                                         </div>
                                     </form>
