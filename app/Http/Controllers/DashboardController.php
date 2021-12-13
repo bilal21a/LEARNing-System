@@ -16,22 +16,22 @@ class DashboardController extends Controller
     {
         $teacher_id= Auth::user()->id;
         $time_all_day = HrsTime::select('name','value')->get()->ToArray();
-        $schedule =  Schedule::firstOrCreate(['teacher_id' => $teacher_id]);
-        return view('frontend.teacher.dashboard-classrooms',compact('time_all_day','schedule'));
-    }
-    public function schedule_save($field,$time)
-    {
-        try {
-            $teacher_id= Auth::user()->id;
-            $schedule =  Schedule::firstOrCreate(['teacher_id' => $teacher_id]);
-            $schedule->$field=$time;
-            $schedule->save();
+        $schedule =  Schedule::where('teacher_id' , $teacher_id)->get();
+        if ($schedule->count()) {
+            // exists
+            $schedule_first=$schedule->where('level','first')->first();
+            $schedule_second=$schedule->where('level','second')->first();
+            $schedule_third=$schedule->where('level','third')->first();
+            $schedule_fourth=$schedule->where('level','fourth')->first();
+        }else{
+            $schedule_first='';
+            $schedule_second='';
+            $schedule_third='';
+            $schedule_fourth='';
 
-            return $field." value has been updated";
-        } catch (\Throwable $th) {
-            return $th->getMessage();
         }
-
+        // dd($schedule_fourth);
+        return view('frontend.teacher.dashboard-classrooms',compact('time_all_day','schedule','schedule_first','schedule_second','schedule_third','schedule_fourth'));
     }
     public function schedule_save_second($field,$time,$time_data)
     {

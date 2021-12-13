@@ -22,7 +22,6 @@ Route::get('/2', function () {
 
 Route::group(['namespace' => 'teacher'], function () {
     Route::get('add_schedule', [DashboardController::class, 'index'])->name('add_schedule');
-    Route::get('schedule_save/{field}/{time}', [DashboardController::class, 'schedule_save'])->name('schedule_save');
     Route::get('schedule_save_second/{field}/{time}/{time_data}', [DashboardController::class, 'schedule_save_second'])->name('schedule_save_second');
 
 });
