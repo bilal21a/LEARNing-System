@@ -2,14 +2,14 @@
 
     Theme Name  : Teachestan
     Theme URI   : http://teachestan.com/
-    Description : Teachestan 
+    Description : Teachestan
     Author Name : @kourosh-neyestani
     Author URI  : http://afracode.com
     Version     : 1.0
 
 ------------------------------------*/
 /*------------------------------------
-    
+
     STYLESHEET INDEXING
     |
     |
@@ -3394,10 +3394,10 @@ Forms
   min-height: 180px;
 }
 
-/* 
+/*
 * Form - Style 1
 */
-/* 
+/*
 * Form - Style 2
 */
 .form-2 {
@@ -3465,7 +3465,7 @@ Forms
           box-shadow: inset 0px 0px 0px 1px var(--primary);
 }
 
-/* 
+/*
 * Form - Style 3
 */
 .form-3 {
@@ -5322,7 +5322,7 @@ Forms
   font-weight: bold;
 }
 
-.el-panel.el-panel-calendar .item:before {
+/* .el-panel.el-panel-calendar .item:before {
   top: 36px;
   left: 20px;
   width: 6px;
@@ -5333,7 +5333,7 @@ Forms
   border-radius: 50%;
   margin-top: -1px;
   background-color: var(--primary);
-}
+} */
 
 .el-panel.el-panel-financial p {
   text-align: center !important;
@@ -7017,7 +7017,7 @@ Preloader
           transform: translate(-50%, -50%);
 }
 
-/* 
+/*
 * Preloader - Style 1
 */
 .preloader-1 {
@@ -7042,7 +7042,7 @@ Preloader
           animation: preloader-1 1.2s infinite;
 }
 
-/* 
+/*
 * Preloader - Style 2
 */
 .preloader-2 {
@@ -7062,7 +7062,7 @@ Preloader
           animation: preloader-2 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
 
-/* 
+/*
 * Preloader - Style 3
 */
 .preloader-3 {
@@ -7175,7 +7175,7 @@ Preloader
           animation-delay: 0s;
 }
 
-/* 
+/*
 * Preloader - Style 4
 */
 .preloader-4 {
@@ -7197,7 +7197,7 @@ Preloader
           animation: preloader-4 1.2s linear infinite;
 }
 
-/* 
+/*
 * Preloader - Style 5
 */
 .preloader-5 {
@@ -7237,7 +7237,7 @@ Preloader
           animation-delay: -0.15s;
 }
 
-/* 
+/*
 * Preloader - Style 6
 */
 .preloader-6 {
@@ -8087,8 +8087,8 @@ Element: Responsive Video
 /*------------------------------------
 testimonial
 ------------------------------------*/
-/* 
-* testimonial 
+/*
+* testimonial
 */
 .section-testimonial .slick-dots {
   top: 0;
@@ -8655,7 +8655,7 @@ testimonial
   .section-courses .cards .el-card .card-title, .section-courses .cards .el-panel .card-title, .section-courses .cards .section-features.section-features-1 .item .card-title, .section-features.section-features-1 .section-courses .cards .item .card-title {
     width: 100%;
   }
-  
+
   .section-courses .cards .el-card .card-title h4,
   .section-courses .cards .el-panel .card-title h4,
   .section-courses .cards .section-features.section-features-1 .item .card-title h4,
@@ -8672,7 +8672,7 @@ testimonial
     padding-right: 6px;
     padding-left: 15px;
   }
-  
+
   .section-courses .cards .el-card .card-title h4,
   .section-courses .cards .el-panel .card-title h4,
   .section-courses .cards .section-features.section-features-1 .item .card-title h4,

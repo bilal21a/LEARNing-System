@@ -1,4 +1,33 @@
 @extends('index')
+@section('inline_css')
+<style>
+.container ul {
+  list-style-type: none;
+}
+/* Using a background image */
+.list-1 li {
+  background: url(http://ts1.mm.bing.net/th?&id=JN.zbFVGGFnENhsLdbnqmoY5w&w=300&h=300&c=0&pid=1.9&rs=0&p=0&r=0) left center no-repeat;
+  padding-left: 3em;
+}
+/* Using the pseudo element before to hold a border-triangle */
+
+/* Using the pseudo element before to hold a cirlce */
+.list-3 li:before {
+  content: "";
+  display: inline-block;
+  background-color: blue;
+  height: 6px;
+  width: 6px;
+  border-radius: 3px;
+  margin: 0 .5em 1px 0;
+}
+/* Adding the error class to the li changes the color of the bullet this must be after the normal color is set */
+.error + li:before {
+  background-color: red;
+}
+
+</style>
+@endsection
 @section('content')
 
     <!--Wrapper-->
@@ -38,11 +67,18 @@
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                         <div class="item">
                                             <div class="row row-xs">
-                                                <div class="col">
-                                                    <span class="week">Monday</span>
+                                                <div class="col" style="position: absolute;top: 40%;">
+                                                    <span class="week" >
+                                                        <ul class="list-3" style="padding:0">
+                                                            <li>Monday</li>
+                                                          </ul>
+                                                    </span>
                                                 </div>
                                                 <div class="col">
-                                                    <span class="hour">{{ $mon_start }} - {{ $mon_end }}</span>
+                                                    <span class="hour">10:00 am - 10:00 am</span><br>
+                                                    <span class="hour">10:00 am - 10:00 am</span><br>
+                                                    <span class="hour">10:00 am - 10:00 am</span><br>
+                                                    <span class="hour">10:00 am - 10:00 am</span><br>
                                                 </div>
                                             </div>
                                         </div>
