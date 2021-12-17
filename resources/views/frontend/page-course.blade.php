@@ -63,111 +63,147 @@
                                     <h2>Schedule</h2>
                                 </div>
                                 <div class="row row-xs">
-                                    @if (($mon_start != 'no time') && ($mon_end != 'no time'))
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                         <div class="item">
                                             <div class="row row-xs">
                                                 <div class="col" style="position: absolute;top: 40%;">
                                                     <span class="week" >
                                                         <ul class="list-3" style="padding:0">
-                                                            <li>Monday</li>
+                                                            <li style="font-weight:bold">Monday</li>
                                                           </ul>
                                                     </span>
                                                 </div>
                                                 <div class="col">
-                                                    <span class="hour">10:00 am - 10:00 am</span><br>
-                                                    <span class="hour">10:00 am - 10:00 am</span><br>
-                                                    <span class="hour">10:00 am - 10:00 am</span><br>
-                                                    <span class="hour">10:00 am - 10:00 am</span><br>
+                                                    @foreach ($schedules as $schedule)
+                                                        @if (($schedule->mon_start_val != 'no time') && ($schedule->mon_end_val != 'no time'))
+                                                            <span class="hour">{{ $schedule->mon_start_val }} - {{ $schedule->mon_end_val }}</span><br>
+                                                        @endif
+                                                    @endforeach
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    @endif
-                                    @if (($tue_start != 'no time') && ($tue_end != 'no time'))
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                         <div class="item">
                                             <div class="row row-xs">
-                                                <div class="col">
-                                                    <span class="week">Tuesday</span>
+                                                <div class="col" style="position: absolute;top: 40%;">
+                                                    <span class="week" >
+                                                        <ul class="list-3" style="padding:0">
+                                                            <li style="font-weight:bold">Tuesday</li>
+                                                          </ul>
+                                                    </span>
                                                 </div>
                                                 <div class="col">
-                                                    <span class="hour">{{ $tue_start }} - {{ $tue_end }}</span>
+                                                    @foreach ($schedules as $schedule)
+                                                        @if (($schedule->tue_start_val != 'no time') && ($schedule->tue_end_val != 'no time'))
+                                                            <span class="hour">{{ $schedule->tue_start_val }} - {{ $schedule->tue_end_val }}</span><br>
+                                                        @endif
+                                                    @endforeach
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    @endif
-                                    @if (($wed_start != 'no time') && ($wed_end != 'no time'))
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                         <div class="item">
                                             <div class="row row-xs">
-                                                <div class="col">
-                                                    <span class="week">Wednesday</span>
+                                                <div class="col" style="position: absolute;top: 40%;">
+                                                    <span class="week" >
+                                                        <ul class="list-3" style="padding:0">
+                                                            <li style="font-weight:bold">Wednesday</li>
+                                                          </ul>
+                                                    </span>
                                                 </div>
                                                 <div class="col">
-                                                    <span class="hour">{{ $wed_start }} - {{ $wed_end }}</span>
+                                                    @foreach ($schedules as $schedule)
+                                                        @if (($schedule->wed_start_val != 'no time') && ($schedule->wed_end_val != 'no time'))
+                                                            <span class="hour">{{ $schedule->wed_start_val }} - {{ $schedule->wed_end_val }}</span><br>
+                                                        @endif
+                                                    @endforeach
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    @endif
-                                    @if (($thu_start != 'no time') && ($thu_end != 'no time'))
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                         <div class="item">
                                             <div class="row row-xs">
-                                                <div class="col">
-                                                    <span class="week">Thursday</span>
+                                                <div class="col" style="position: absolute;top: 40%;">
+                                                    <span class="week" >
+                                                        <ul class="list-3" style="padding:0">
+                                                            <li style="font-weight:bold">Thursday</li>
+                                                          </ul>
+                                                    </span>
                                                 </div>
                                                 <div class="col">
-                                                    <span class="hour">{{ $thu_start }} - {{ $thu_end }}</span>
+                                                    @foreach ($schedules as $schedule)
+                                                        @if (($schedule->thu_start_val != 'no time') && ($schedule->thu_end_val != 'no time'))
+                                                            <span class="hour">{{ $schedule->thu_start_val }} - {{ $schedule->thu_end_val }}</span><br>
+                                                        @endif
+                                                    @endforeach
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    @endif
-                                    @if (($fri_start != 'no time') && ($fri_end != 'no time'))
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                         <div class="item">
                                             <div class="row row-xs">
-                                                <div class="col">
-                                                    <span class="week">Friday</span>
+                                                <div class="col" style="position: absolute;top: 40%;">
+                                                    <span class="week" >
+                                                        <ul class="list-3" style="padding:0">
+                                                            <li style="font-weight:bold">Friday</li>
+                                                          </ul>
+                                                    </span>
                                                 </div>
                                                 <div class="col">
-                                                    <span class="hour">{{ $fri_start }} - {{ $fri_end }}</span>
+                                                    @foreach ($schedules as $schedule)
+                                                        @if (($schedule->fri_start_val != 'no time') && ($schedule->fri_end_val != 'no time'))
+                                                            <span class="hour">{{ $schedule->fri_start_val }} - {{ $schedule->fri_end_val }}</span><br>
+                                                        @endif
+                                                    @endforeach
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    @endif
-                                    @if (($sat_start != 'no time') && ($sat_end != 'no time'))
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                         <div class="item">
                                             <div class="row row-xs">
-                                                <div class="col">
-                                                    <span class="week">Satursday</span>
+                                                <div class="col" style="position: absolute;top: 40%;">
+                                                    <span class="week" >
+                                                        <ul class="list-3" style="padding:0">
+                                                            <li style="font-weight:bold">Saturday</li>
+                                                          </ul>
+                                                    </span>
                                                 </div>
                                                 <div class="col">
-                                                    <span class="hour">{{ $sat_start }} - {{ $sat_end }}</span>
+                                                    @foreach ($schedules as $schedule)
+                                                        @if (($schedule->sat_start_val != 'no time') && ($schedule->sat_end_val != 'no time'))
+                                                            <span class="hour">{{ $schedule->sat_start_val }} - {{ $schedule->sat_end_val }}</span><br>
+                                                        @endif
+                                                    @endforeach
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    @endif
-                                    @if (($sun_start != 'no time') && ($sun_end != 'no time'))
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                         <div class="item">
                                             <div class="row row-xs">
-                                                <div class="col">
-                                                    <span class="week">Sunday</span>
+                                                <div class="col" style="position: absolute;top: 40%;">
+                                                    <span class="week" >
+                                                        <ul class="list-3" style="padding:0">
+                                                            <li style="font-weight:bold">Sunday</li>
+                                                          </ul>
+                                                    </span>
                                                 </div>
                                                 <div class="col">
-                                                    <span class="hour">{{ $sun_start }} - {{ $sun_end }}</span>
+                                                    @foreach ($schedules as $schedule)
+                                                        @if (($schedule->sun_start_val != 'no time') && ($schedule->sun_end_val != 'no time'))
+                                                            <span class="hour">{{ $schedule->sun_start_val }} - {{ $schedule->sun_end_val }}</span><br>
+                                                        @endif
+                                                    @endforeach
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    @endif
+
 
                                 </div>
                             </div>
