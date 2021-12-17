@@ -62,7 +62,10 @@
                                 <div class="el-panel-title">
                                     <h2>Schedule</h2>
                                 </div>
+                                @if (!$schedules->isEmpty())
+
                                 <div class="row row-xs">
+                                    @if (($count['mon_start'] != 0) && ($count['mon_end'] != 0))
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                         <div class="item">
                                             <div class="row row-xs">
@@ -83,6 +86,9 @@
                                             </div>
                                         </div>
                                     </div>
+                                    @endif
+
+                                    @if (($count['tue_start'] != 0) && ($count['tue_end'] != 0))
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                         <div class="item">
                                             <div class="row row-xs">
@@ -103,6 +109,9 @@
                                             </div>
                                         </div>
                                     </div>
+                                    @endif
+
+                                    @if (($count['wed_start'] != 0) && ($count['wed_end'] != 0))
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                         <div class="item">
                                             <div class="row row-xs">
@@ -123,6 +132,9 @@
                                             </div>
                                         </div>
                                     </div>
+                                    @endif
+
+                                    @if (($count['thu_start'] != 0) && ($count['thu_end'] != 0))
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                         <div class="item">
                                             <div class="row row-xs">
@@ -143,6 +155,9 @@
                                             </div>
                                         </div>
                                     </div>
+                                    @endif
+
+                                    @if (($count['fri_start'] != 0) && ($count['fri_end'] != 0))
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                         <div class="item">
                                             <div class="row row-xs">
@@ -163,6 +178,9 @@
                                             </div>
                                         </div>
                                     </div>
+                                    @endif
+
+                                    @if (($count['sat_start'] != 0) && ($count['sat_end'] != 0))
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                         <div class="item">
                                             <div class="row row-xs">
@@ -183,6 +201,9 @@
                                             </div>
                                         </div>
                                     </div>
+                                    @endif
+
+                                    @if (($count['sun_start'] != 0) && ($count['sun_end'] != 0))
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                                         <div class="item">
                                             <div class="row row-xs">
@@ -203,9 +224,15 @@
                                             </div>
                                         </div>
                                     </div>
+                                    @endif
 
 
                                 </div>
+
+                                @else
+                                <p>Teacher does not have any active Schedule</p>
+                                @endif
+
                             </div>
                         </div>
                     </div>

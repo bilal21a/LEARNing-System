@@ -257,7 +257,7 @@
                                                                                     <input type="hidden" class="form-control" value="mon_end-4">
                                                                                     <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
-                                                                                            <option value="{{ $time['value'] }}" @if(isset($schedule_fourth->mon_start)){{ $time['value'] == $schedule_fourth->mon_end ? 'selected' : '' }} @endif>{{ $time['name'] }}</option>
+                                                                                            <option value="{{ $time['value'] }}" @if(isset($schedule_fourth->mon_end)){{ $time['value'] == $schedule_fourth->mon_end ? 'selected' : '' }} @endif>{{ $time['name'] }}</option>
                                                                                         @endforeach
                                                                                     </select>
                                                                                 </div>

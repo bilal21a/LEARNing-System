@@ -19,10 +19,10 @@ class DashboardController extends Controller
         $schedule =  Schedule::where('teacher_id' , $teacher_id)->get();
         if ($schedule->count()) {
             // exists
-            $schedule_first=$schedule->where('level','first')->first();
-            $schedule_second=$schedule->where('level','second')->first();
-            $schedule_third=$schedule->where('level','third')->first();
-            $schedule_fourth=$schedule->where('level','fourth')->first();
+            $schedule_first=$schedule->where('level',1)->first();
+            $schedule_second=$schedule->where('level',2)->first();
+            $schedule_third=$schedule->where('level',3)->first();
+            $schedule_fourth=$schedule->where('level',4)->first();
         }else{
             $schedule_first='';
             $schedule_second='';
