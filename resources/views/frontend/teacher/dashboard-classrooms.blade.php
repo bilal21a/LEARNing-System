@@ -154,7 +154,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">Start</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="mon_start-first">
+                                                                                    <input type="hidden" class="form-control" value="mon_start-1">
                                                                                     <select class="el-select2-select-hour hour_time " name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_first->mon_start)){{ $time['value'] == $schedule_first->mon_start ? 'selected' : '' }}@endif >{{ $time['name'] }}</option>
@@ -167,7 +167,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">End</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="mon_end-first">
+                                                                                    <input type="hidden" class="form-control" value="mon_end-1">
                                                                                     <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_first->mon_end)){{ $time['value'] == $schedule_first->mon_end ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -183,7 +183,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">Start</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="mon_start-second">
+                                                                                    <input type="hidden" class="form-control" value="mon_start-2">
                                                                                     <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_second->mon_start)){{ $time['value'] == $schedule_second->mon_start ? 'selected' : '' }}@endif >{{ $time['name'] }}</option>
@@ -196,7 +196,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">End</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="mon_end-second">
+                                                                                    <input type="hidden" class="form-control" value="mon_end-2">
                                                                                     <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_second->mon_end)){{ $time['value'] == $schedule_second->mon_end ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -212,7 +212,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">Start</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="mon_start-third">
+                                                                                    <input type="hidden" class="form-control" value="mon_start-3">
                                                                                     <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_third->mon_start)){{ $time['value'] == $schedule_third->mon_start ? 'selected' : '' }}@endif >{{ $time['name'] }}</option>
@@ -225,7 +225,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">End</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="mon_end-third">
+                                                                                    <input type="hidden" class="form-control" value="mon_end-3">
                                                                                     <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_third->mon_end)){{ $time['value'] == $schedule_third->mon_end ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -241,7 +241,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">Start</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="mon_start-fourth">
+                                                                                    <input type="hidden" class="form-control" value="mon_start-4">
                                                                                     <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_fourth->mon_start)){{ $time['value'] == $schedule_fourth->mon_start ? 'selected' : '' }} @endif>{{ $time['name'] }}</option>
@@ -254,7 +254,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">End</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="mon_end-fourth">
+                                                                                    <input type="hidden" class="form-control" value="mon_end-4">
                                                                                     <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_fourth->mon_start)){{ $time['value'] == $schedule_fourth->mon_end ? 'selected' : '' }} @endif>{{ $time['name'] }}</option>
@@ -278,7 +278,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">Start</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="tue_start-first">
+                                                                                    <input type="hidden" class="form-control" value="tue_start-1">
                                                                                     <select class="el-select2-select-hour hour_time " name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_first->tue_start)){{ $time['value'] == $schedule_first->tue_start ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -291,7 +291,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">End</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="tue_end-first">
+                                                                                    <input type="hidden" class="form-control" value="tue_end-1">
                                                                                     <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_first->tue_end)){{ $time['value'] == $schedule_first->tue_end ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -307,7 +307,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">Start</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="tue_start-second">
+                                                                                    <input type="hidden" class="form-control" value="tue_start-2">
                                                                                     <select class="el-select2-select-hour hour_time " name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_second->tue_start)){{ $time['value'] == $schedule_second->tue_start ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -320,7 +320,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">End</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="tue_end-second">
+                                                                                    <input type="hidden" class="form-control" value="tue_end-2">
                                                                                     <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_second->tue_end)){{ $time['value'] == $schedule_second->tue_end ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -336,7 +336,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">Start</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="tue_start-third">
+                                                                                    <input type="hidden" class="form-control" value="tue_start-3">
                                                                                     <select class="el-select2-select-hour hour_time " name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_third->tue_start)){{ $time['value'] == $schedule_third->tue_start ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -349,7 +349,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">End</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="tue_end-third">
+                                                                                    <input type="hidden" class="form-control" value="tue_end-3">
                                                                                     <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_third->tue_end)){{ $time['value'] == $schedule_third->tue_end ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -365,7 +365,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">Start</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="tue_start-fourth">
+                                                                                    <input type="hidden" class="form-control" value="tue_start-4">
                                                                                     <select class="el-select2-select-hour hour_time " name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_fourth->tue_start)){{ $time['value'] == $schedule_fourth->tue_start ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -378,7 +378,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">End</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="tue_end-fourth">
+                                                                                    <input type="hidden" class="form-control" value="tue_end-4">
                                                                                     <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_fourth->tue_end)){{ $time['value'] == $schedule_fourth->tue_end ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -404,7 +404,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">Start</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="wed_start-first">
+                                                                                    <input type="hidden" class="form-control" value="wed_start-1">
                                                                                     <select class="el-select2-select-hour hour_time " name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_first->wed_start)){{ $time['value'] == $schedule_first->wed_start ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -417,7 +417,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">End</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="wed_end-first">
+                                                                                    <input type="hidden" class="form-control" value="wed_end-1">
                                                                                     <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_first->wed_end)){{ $time['value'] == $schedule_first->wed_end ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -433,7 +433,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">Start</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="wed_start-second">
+                                                                                    <input type="hidden" class="form-control" value="wed_start-2">
                                                                                     <select class="el-select2-select-hour hour_time " name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_second->wed_start)){{ $time['value'] == $schedule_second->wed_start ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -446,7 +446,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">End</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="wed_end-second">
+                                                                                    <input type="hidden" class="form-control" value="wed_end-2">
                                                                                     <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_second->wed_end)){{ $time['value'] == $schedule_second->wed_end ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -462,7 +462,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">Start</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="wed_start-third">
+                                                                                    <input type="hidden" class="form-control" value="wed_start-3">
                                                                                     <select class="el-select2-select-hour hour_time " name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_third->wed_start)){{ $time['value'] == $schedule_third->wed_start ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -475,7 +475,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">End</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="wed_end-third">
+                                                                                    <input type="hidden" class="form-control" value="wed_end-3">
                                                                                     <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_third->wed_end)){{ $time['value'] == $schedule_third->wed_end ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -491,7 +491,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">Start</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="wed_start-fourth">
+                                                                                    <input type="hidden" class="form-control" value="wed_start-4">
                                                                                     <select class="el-select2-select-hour hour_time " name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_fourth->wed_start)){{ $time['value'] == $schedule_fourth->wed_start ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -504,7 +504,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">End</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="wed_end-fourth">
+                                                                                    <input type="hidden" class="form-control" value="wed_end-4">
                                                                                     <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_fourth->wed_end)){{ $time['value'] == $schedule_fourth->wed_end ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -528,7 +528,7 @@
                                                                         <div class="form-item">
                                                                             <label for="input-type" class="form-label">Start</label>
                                                                             <div class="input-select">
-                                                                                <input type="hidden" class="form-control" value="thu_start-first">
+                                                                                <input type="hidden" class="form-control" value="thu_start-1">
                                                                                 <select class="el-select2-select-hour hour_time " name="hour_time" required>
                                                                                     @foreach ($time_all_day as $time)
                                                                                         <option value="{{ $time['value'] }}" @if(isset($schedule_first->thu_start)){{ $time['value'] == $schedule_first->thu_start ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -541,7 +541,7 @@
                                                                         <div class="form-item">
                                                                             <label for="input-type" class="form-label">End</label>
                                                                             <div class="input-select">
-                                                                                <input type="hidden" class="form-control" value="thu_end-first">
+                                                                                <input type="hidden" class="form-control" value="thu_end-1">
                                                                                 <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                     @foreach ($time_all_day as $time)
                                                                                         <option value="{{ $time['value'] }}" @if(isset($schedule_first->thu_end)){{ $time['value'] == $schedule_first->thu_end ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -557,7 +557,7 @@
                                                                         <div class="form-item">
                                                                             <label for="input-type" class="form-label">Start</label>
                                                                             <div class="input-select">
-                                                                                <input type="hidden" class="form-control" value="thu_start-second">
+                                                                                <input type="hidden" class="form-control" value="thu_start-2">
                                                                                 <select class="el-select2-select-hour hour_time " name="hour_time" required>
                                                                                     @foreach ($time_all_day as $time)
                                                                                         <option value="{{ $time['value'] }}" @if(isset($schedule_second->thu_start)){{ $time['value'] == $schedule_second->thu_start ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -570,7 +570,7 @@
                                                                         <div class="form-item">
                                                                             <label for="input-type" class="form-label">End</label>
                                                                             <div class="input-select">
-                                                                                <input type="hidden" class="form-control" value="thu_end-second">
+                                                                                <input type="hidden" class="form-control" value="thu_end-2">
                                                                                 <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                     @foreach ($time_all_day as $time)
                                                                                         <option value="{{ $time['value'] }}" @if(isset($schedule_second->thu_end)){{ $time['value'] == $schedule_second->thu_end ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -586,7 +586,7 @@
                                                                         <div class="form-item">
                                                                             <label for="input-type" class="form-label">Start</label>
                                                                             <div class="input-select">
-                                                                                <input type="hidden" class="form-control" value="thu_start-third">
+                                                                                <input type="hidden" class="form-control" value="thu_start-3">
                                                                                 <select class="el-select2-select-hour hour_time " name="hour_time" required>
                                                                                     @foreach ($time_all_day as $time)
                                                                                         <option value="{{ $time['value'] }}" @if(isset($schedule_third->thu_start)){{ $time['value'] == $schedule_third->thu_start ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -599,7 +599,7 @@
                                                                         <div class="form-item">
                                                                             <label for="input-type" class="form-label">End</label>
                                                                             <div class="input-select">
-                                                                                <input type="hidden" class="form-control" value="thu_end-third">
+                                                                                <input type="hidden" class="form-control" value="thu_end-3">
                                                                                 <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                     @foreach ($time_all_day as $time)
                                                                                         <option value="{{ $time['value'] }}" @if(isset($schedule_third->thu_end)){{ $time['value'] == $schedule_third->thu_end ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -615,7 +615,7 @@
                                                                         <div class="form-item">
                                                                             <label for="input-type" class="form-label">Start</label>
                                                                             <div class="input-select">
-                                                                                <input type="hidden" class="form-control" value="thu_start-fourth">
+                                                                                <input type="hidden" class="form-control" value="thu_start-4">
                                                                                 <select class="el-select2-select-hour hour_time " name="hour_time" required>
                                                                                     @foreach ($time_all_day as $time)
                                                                                         <option value="{{ $time['value'] }}" @if(isset($schedule_fourth->thu_start)){{ $time['value'] == $schedule_fourth->thu_start ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -628,7 +628,7 @@
                                                                         <div class="form-item">
                                                                             <label for="input-type" class="form-label">End</label>
                                                                             <div class="input-select">
-                                                                                <input type="hidden" class="form-control" value="thu_end-fourth">
+                                                                                <input type="hidden" class="form-control" value="thu_end-4">
                                                                                 <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                     @foreach ($time_all_day as $time)
                                                                                         <option value="{{ $time['value'] }}" @if(isset($schedule_fourth->thu_end)){{ $time['value'] == $schedule_fourth->thu_end ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -652,7 +652,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">Start</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="fri_start-first">
+                                                                                    <input type="hidden" class="form-control" value="fri_start-1">
                                                                                     <select class="el-select2-select-hour hour_time " name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_first->fri_start)){{ $time['value'] == $schedule_first->fri_start ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -665,7 +665,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">End</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="fri_end-first">
+                                                                                    <input type="hidden" class="form-control" value="fri_end-1">
                                                                                     <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_first->fri_end)){{ $time['value'] == $schedule_first->fri_end ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -681,7 +681,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">Start</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="fri_start-second">
+                                                                                    <input type="hidden" class="form-control" value="fri_start-2">
                                                                                     <select class="el-select2-select-hour hour_time " name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_second->fri_start)){{ $time['value'] == $schedule_second->fri_start ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -694,7 +694,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">End</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="fri_end-second">
+                                                                                    <input type="hidden" class="form-control" value="fri_end-2">
                                                                                     <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_second->fri_end)){{ $time['value'] == $schedule_second->fri_end ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -710,7 +710,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">Start</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="fri_start-third">
+                                                                                    <input type="hidden" class="form-control" value="fri_start-3">
                                                                                     <select class="el-select2-select-hour hour_time " name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_third->fri_start)){{ $time['value'] == $schedule_third->fri_start ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -723,7 +723,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">End</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="fri_end-third">
+                                                                                    <input type="hidden" class="form-control" value="fri_end-3">
                                                                                     <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_third->fri_end)){{ $time['value'] == $schedule_third->fri_end ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -739,7 +739,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">Start</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="fri_start-fourth">
+                                                                                    <input type="hidden" class="form-control" value="fri_start-4">
                                                                                     <select class="el-select2-select-hour hour_time " name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_fourth->fri_start)){{ $time['value'] == $schedule_fourth->fri_start ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -752,7 +752,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">End</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="fri_end-fourth">
+                                                                                    <input type="hidden" class="form-control" value="fri_end-4">
                                                                                     <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_fourth->fri_end)){{ $time['value'] == $schedule_fourth->fri_end ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -776,7 +776,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">Start</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="sat_start-first">
+                                                                                    <input type="hidden" class="form-control" value="sat_start-1">
                                                                                     <select class="el-select2-select-hour hour_time " name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_first->fri_start)){{ $time['value'] == $schedule_first->sat_start ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -789,7 +789,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">End</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="sat_end-first">
+                                                                                    <input type="hidden" class="form-control" value="sat_end-1">
                                                                                     <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_first->fri_start)){{ $time['value'] == $schedule_first->sat_end ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -805,7 +805,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">Start</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="sat_start-second">
+                                                                                    <input type="hidden" class="form-control" value="sat_start-2">
                                                                                     <select class="el-select2-select-hour hour_time " name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_second->fri_start)){{ $time['value'] == $schedule_second->sat_start ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -818,7 +818,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">End</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="sat_end-second">
+                                                                                    <input type="hidden" class="form-control" value="sat_end-2">
                                                                                     <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_second->fri_start)){{ $time['value'] == $schedule_second->sat_end ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -834,7 +834,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">Start</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="sat_start-third">
+                                                                                    <input type="hidden" class="form-control" value="sat_start-3">
                                                                                     <select class="el-select2-select-hour hour_time " name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_third->fri_start)){{ $time['value'] == $schedule_third->sat_start ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -847,7 +847,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">End</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="sat_end-third">
+                                                                                    <input type="hidden" class="form-control" value="sat_end-3">
                                                                                     <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_third->fri_start)){{ $time['value'] == $schedule_third->sat_end ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -863,7 +863,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">Start</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="sat_start-fourth ">
+                                                                                    <input type="hidden" class="form-control" value="sat_start-4 ">
                                                                                     <select class="el-select2-select-hour hour_time " name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_fourth->fri_start)){{ $time['value'] == $schedule_fourth->sat_start ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -876,7 +876,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">End</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="sat_end-fourth">
+                                                                                    <input type="hidden" class="form-control" value="sat_end-4">
                                                                                     <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_fourth->fri_start)){{ $time['value'] == $schedule_fourth->sat_end ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -900,7 +900,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">Start</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="sun_start-first">
+                                                                                    <input type="hidden" class="form-control" value="sun_start-1">
                                                                                     <select class="el-select2-select-hour hour_time " name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_first->sun_start)){{ $time['value'] == $schedule_first->sun_start ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -913,7 +913,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">End</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="sun_end-first">
+                                                                                    <input type="hidden" class="form-control" value="sun_end-1">
                                                                                     <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_first->sun_end)){{ $time['value'] == $schedule_first->sun_end ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -929,7 +929,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">Start</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="sun_start-second">
+                                                                                    <input type="hidden" class="form-control" value="sun_start-2">
                                                                                     <select class="el-select2-select-hour hour_time " name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_second->sun_start)){{ $time['value'] == $schedule_second->sun_start ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -942,7 +942,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">End</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="sun_end-second">
+                                                                                    <input type="hidden" class="form-control" value="sun_end-2">
                                                                                     <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_second->sun_end)){{ $time['value'] == $schedule_second->sun_end ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -958,7 +958,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">Start</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="sun_start-third">
+                                                                                    <input type="hidden" class="form-control" value="sun_start-3">
                                                                                     <select class="el-select2-select-hour hour_time " name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_third->sun_start)){{ $time['value'] == $schedule_third->sun_start ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -971,7 +971,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">End</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="sun_end-third">
+                                                                                    <input type="hidden" class="form-control" value="sun_end-3">
                                                                                     <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_third->sun_end)){{ $time['value'] == $schedule_third->sun_end ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -987,7 +987,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">Start</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="sun_start-fourth">
+                                                                                    <input type="hidden" class="form-control" value="sun_start-4">
                                                                                     <select class="el-select2-select-hour hour_time " name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_fourth->sun_start)){{ $time['value'] == $schedule_fourth->sun_start ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
@@ -1000,7 +1000,7 @@
                                                                             <div class="form-item">
                                                                                 <label for="input-type" class="form-label">End</label>
                                                                                 <div class="input-select">
-                                                                                    <input type="hidden" class="form-control" value="sun_end-fourth">
+                                                                                    <input type="hidden" class="form-control" value="sun_end-4">
                                                                                     <select class="el-select2-select-hour hour_time" name="hour_time" required>
                                                                                         @foreach ($time_all_day as $time)
                                                                                             <option value="{{ $time['value'] }}" @if(isset($schedule_fourth->sun_end)){{ $time['value'] == $schedule_fourth->sun_end ? 'selected' : '' }}@endif>{{ $time['name'] }}</option>
