@@ -13,7 +13,8 @@ class BookTeacherController extends Controller
     public function index()
     {
         $teacher_id= Auth::user()->id;
-        $schedules =  Schedule::where('teacher_id' , $teacher_id)->get();
+        $schedules =  Schedule::where('teacher_id' , $teacher_id)->orderBy('level', 'desc')->get();
+        // dd($schedules);
         $this->data['schedules']=$schedules;
 
         return view('frontend.page-course',$this->data);
