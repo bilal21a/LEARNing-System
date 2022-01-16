@@ -30,18 +30,15 @@ class DashboardController extends Controller
             $schedule_fourth='';
 
         }
-        // dd($schedule_fourth);
         return view('frontend.teacher.dashboard-classrooms',compact('time_all_day','schedule','schedule_first','schedule_second','schedule_third','schedule_fourth'));
     }
     public function schedule_save_second($field,$time,$time_data)
     {
         $field = explode( '-', $field );
-        // $field[1]="third";
         $level=$field[1];
         try {
             $teacher_id= Auth::user()->id;
             $schedule1 =  Schedule::where('teacher_id' , $teacher_id)->where('level' , $level)->first();
-            // dd($schedule1);
             if ($schedule1==null) {
                 $schedule = new Schedule();
                 $schedule->teacher_id=$teacher_id;
@@ -59,5 +56,10 @@ class DashboardController extends Controller
         } catch (\Throwable $th) {
             return $th->getMessage();
         }
+    }
+
+    public function free_trail()
+    {
+        return view('frontend.teacher.free_trail');
     }
 }
