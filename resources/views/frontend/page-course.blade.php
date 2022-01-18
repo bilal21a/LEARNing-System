@@ -25,6 +25,47 @@
 .error + li:before {
   background-color: red;
 }
+.days_block{
+    margin-bottom: 6px;
+    display:none;
+}
+.days_single{
+    width: 45px;
+    height: 30px;
+    border-radius: 10px;
+    background: #1cc9b7;
+    display: inline-block;
+    text-align: center;
+    color:#fff;
+    padding: 6px 6px 0px 6px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+.span_break{
+    display: none;
+}
+.green_day{
+    background: #1cc9b7 !important;
+}
+.alt_day{
+    background: #384cce !important;
+}
+.loader_days{ display:none}
+
+
+
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .span_break { display: block; }  /* show it on small screens */
+}
+
+@media screen and (min-width: 0px) and (max-width: 991px) {
+    .span_break { display: none; }   /* hide it elsewhere */
+}
+@media screen and (min-width: 1200px)  {
+    .span_break { display: none; }   /* hide it elsewhere */
+}
 
 </style>
 @endsection
@@ -236,183 +277,6 @@
                             </div>
                         </div>
 
-                        <div class="el-panel el-panel-calendar">
-                            <div class="el-panel-body">
-                                <div class="el-panel-title">
-                                    <h2>Free Trail</h2>
-                                </div>
-                                <div id="afra-calendar" class="el-calendar el-calendar-week">
-                                    <div class="el-calendar-slider">
-                                        <div class="el-calendar-slider-wrapper">
-                                            <!--Slide (Week)-->
-                                            <div class="el-calendar-slider-item el-calendar-slider-item-1 active" data-id="1">
-                                                <div class="el-calendar-tabs">
-                                                    <!--Week Days-->
-                                                    <ul class="week-days el-calendar-tabs-links">
-                                                        <!--Day 1-->
-                                                        <li class="day deactive" data-filter="Monday">
-                                                            <p>
-                                                                <span class="week-day-name">Mon</span>
-                                                            </p>
-                                                        </li>
-                                                        <!--/-->
-                                                        <!--Day 2-->
-                                                        <li class="day active" data-filter="Tuesday">
-                                                            <p>
-                                                                <span class="week-day-name">Tue</span>
-                                                            </p>
-                                                        </li>
-                                                        <!--/-->
-                                                        <!--Day 3-->
-                                                        <li class="day" data-filter="Wednesday">
-                                                            <p>
-                                                                <span class="week-day-name">Wed</span>
-                                                            </p>
-                                                        </li>
-                                                        <!--/-->
-                                                        <!--Day 4-->
-                                                        <li class="day" data-filter="Thursday">
-                                                            <p>
-                                                                <span class="week-day-name">Thu</span>
-                                                            </p>
-                                                        </li>
-                                                        <!--/-->
-                                                        <!--Day 5-->
-                                                        <li class="day" data-filter="Friday">
-                                                            <p>
-                                                                <span class="week-day-name">Fri</span>
-                                                            </p>
-                                                        </li>
-                                                        <!--/-->
-                                                        <!--Day 6-->
-                                                        <li class="day deactive" data-filter="Saturday">
-                                                            <p>
-                                                                <span class="week-day-name">Sat</span>
-                                                            </p>
-                                                        </li>
-                                                        <!--/-->
-                                                        <!--Day 7-->
-                                                        <li class="day deactive" data-filter="Sunday">
-                                                            <p>
-                                                                <span class="week-day-name">Sun</span>
-                                                            </p>
-                                                        </li>
-                                                        <!--/-->
-                                                    </ul>
-                                                    <!--/Week Days-->
-                                                    <!--Saturday-->
-                                                    <ul class="day-hours el-calendar-tabs-items" data-filter="Saturday">
-
-                                                    </ul>
-                                                    <!--/Saturday-->
-                                                    <!--Sunday-->
-                                                    <ul class="day-hours el-calendar-tabs-items" data-filter="Sunday">
-
-                                                    </ul>
-                                                    <!--/Sunday-->
-                                                    <!--Monday-->
-                                                    <ul class="day-hours el-calendar-tabs-items" data-filter="Monday">
-
-                                                    </ul>
-                                                    <!--/Monday-->
-                                                    <!--Tuesday-->
-                                                    <ul class="day-hours el-calendar-tabs-items active" data-filter="Tuesday">
-                                                        <!--Step-->
-                                                        <li data-calendar-time="2020-01-01 06:00:00" data-calendar-start="08:00" data-calendar-end="09:00" data-calendar-date="May 1" data-calendar-weekday="Sat" class="hour reserved">
-                                                            <p class="day-cell">
-                                                                <span>08:00</span>
-                                                                <span> - </span>
-                                                                <span>09:00</span>
-                                                            </p>
-                                                        </li>
-                                                        <!--/-->
-                                                        <!--Step-->
-                                                        <li data-calendar-time="2020-01-01 06:00:00" data-calendar-start="09:00" data-calendar-end="10:00" data-calendar-date="May 1" data-calendar-weekday="Sat" class="hour reserved">
-                                                            <p class="day-cell">
-                                                                <span>09:00</span>
-                                                                <span> - </span>
-                                                                <span>10:00</span>
-                                                            </p>
-                                                        </li>
-                                                        <!--/-->
-                                                        <!--Step-->
-                                                        <li data-calendar-time="2020-01-01 06:00:00" data-calendar-start="10:00" data-calendar-end="11:00" data-calendar-date="May 1" data-calendar-weekday="Sat" class="hour inactive">
-                                                            <p class="day-cell">
-                                                                <span>10:00</span>
-                                                                <span> - </span>
-                                                                <span>11:00</span>
-                                                            </p>
-                                                        </li>
-                                                        <!--/-->
-                                                        <!--Step-->
-                                                        <li data-calendar-time="2020-01-01 06:00:00" data-calendar-start="11:00" data-calendar-end="12:00" data-calendar-date="May 1" data-calendar-weekday="Sat" class="hour">
-                                                            <p class="day-cell">
-                                                                <span>11:00</span>
-                                                                <span> - </span>
-                                                                <span>12:00</span>
-                                                            </p>
-                                                        </li>
-                                                        <!--/-->
-                                                        <!--Step-->
-                                                        <li data-calendar-time="2020-01-01 06:00:00" data-calendar-start="14:00" data-calendar-end="15:00" data-calendar-date="May 1" data-calendar-weekday="Sat" class="hour">
-                                                            <p class="day-cell">
-                                                                <span>14:00</span>
-                                                                <span> - </span>
-                                                                <span>15:00</span>
-                                                            </p>
-                                                        </li>
-                                                        <!--/-->
-                                                        <!--Step-->
-                                                        <li data-calendar-time="2020-01-01 06:00:00" data-calendar-start="17:00" data-calendar-end="18:00" data-calendar-date="May 1" data-calendar-weekday="Sat" class="hour">
-                                                            <p class="day-cell">
-                                                                <span>17:00</span>
-                                                                <span> - </span>
-                                                                <span>18:00</span>
-                                                            </p>
-                                                        </li>
-                                                        <!--/-->
-                                                        <!--Step-->
-                                                        <li data-calendar-time="2020-01-01 06:00:00" data-calendar-start="18:00" data-calendar-end="19:00" data-calendar-date="May 1" data-calendar-weekday="Sat" class="hour">
-                                                            <p class="day-cell">
-                                                                <span>18:00</span>
-                                                                <span> - </span>
-                                                                <span>19:00</span>
-                                                            </p>
-                                                        </li>
-                                                        <!--/-->
-                                                        <!--Step-->
-                                                        <li data-calendar-time="2020-01-01 06:00:00" data-calendar-start="19:00" data-calendar-end="20:00" data-calendar-date="May 1" data-calendar-weekday="Sat" class="hour">
-                                                            <p class="day-cell">
-                                                                <span>19:00</span>
-                                                                <span> - </span>
-                                                                <span>20:00</span>
-                                                            </p>
-                                                        </li>
-                                                        <!--/-->
-                                                        <!--Step-->
-                                                        <li data-calendar-time="2020-01-01 06:00:00" data-calendar-start="20:00" data-calendar-end="21:00" data-calendar-date="May 1" data-calendar-weekday="Sat" class="hour">
-                                                            <p class="day-cell">
-                                                                <span>20:00</span>
-                                                                <span> - </span>
-                                                                <span>21:00</span>
-                                                            </p>
-                                                        </li>
-                                                        <!--/-->
-                                                    </ul>
-                                                    <!--/Tuesday-->
-                                                    <!--Wednesday-->
-                                                    <ul class="day-hours el-calendar-tabs-items" data-filter="Wednesday">
-
-                                                    </ul>
-
-                                                </div>
-                                            </div>
-                                            <!--/-->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <aside class="col-lg-4 col-xl-4 order-lg-2">
                         <div class="sticky-sidebar">
@@ -474,9 +338,28 @@
                                         <span class="text">Book Now</span>
                                     </button>
                                     <hr>
-                                    <button class="button button-md button-block button-secondary">
+                                    <div class="days_block">
+                                        <span class="days_single">Mon</span>
+                                        <span class="days_single">Tue</span>
+                                        <span class="days_single">Thu</span>
+                                        <br class="span_break">
+                                        <span class="days_single">Fri</span>
+                                        <span class="days_single">Sat</span>
+                                        <span class="days_single">Sun</span>
+                                    </div>
+
+                                    <button class="button button-md button-block button-secondary free_trail_1">
                                         <span class="text">Free Trail</span>
                                     </button>
+                                    <input type="hidden" value="{{ $teacher_id }}" name="teacher_id" id="teacher_id">
+                                    <input type="hidden" value="{{ auth()->user()->id }}" name="student_id" id="student_id">
+                                    <button class="button button-md button-block button-secondary free_trail_2" style="display: none">
+                                        <span class="text free_text">Free Trail</span>
+                                        <span class="loader_days"><i class="fas fa-spinner fa-spin "></i></span>
+                                    </button>
+
+
+                                    <span class="after_free_trail" style="display: none">Free Trail request has been submitted to instructor</span>
                                 </div>
                             </div>
                         </div>
@@ -720,4 +603,62 @@
             </div>
         </footer>
     </div>
+@endsection
+
+@section('js_after')
+    <script>
+        $( ".free_trail_1" ).click(function() {
+            $('.days_block').show(500);
+            $('.free_trail_2').show();
+            $('.free_trail_1').hide();
+
+        });
+        $( ".days_single" ).click(function() {
+            $(this).addClass('alt_day');
+            $(this).removeClass('green_day');
+            $(this).siblings().removeClass('alt_day');
+            $(this).siblings().addClass('green_day');
+
+            $( ".free_trail_2" ).off('click').click(function() {
+
+                const day= $('.alt_day').text();
+                if (day!='') {
+
+
+                $('.loader_days').show();
+                $('.free_trail_2').attr('disabled', true);
+                $('.free_text').text('Loading');
+
+                const teacher_id= $('#teacher_id').val();
+                const student_id= $('#student_id').val();
+
+                $.ajax({
+                    url: "{{ route('get_free_trail') }}",
+                    type:"POST",
+                    data:{
+                    day:day,
+                    teacher_id:teacher_id,
+                    student_id:student_id,
+                    _token: "{{ csrf_token() }}",
+                    },
+                    success:function(response){
+                    $('.loader_days').hide();
+                    $('.free_trail_2').hide();
+                    $('.days_block').hide();
+                    $('.after_free_trail').show();
+
+                    },
+                    error: function(error) {
+                    $('.loader_days').hide();
+                    $('.free_trail_2').attr('disabled', false);
+                    $('.free_text').text('Free Trail');
+                    }
+                });
+            }
+
+
+            });
+
+        });
+    </script>
 @endsection

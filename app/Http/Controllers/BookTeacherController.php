@@ -4,17 +4,21 @@ namespace App\Http\Controllers;
 
 use App\Models\HrsTime;
 use App\Models\Schedule;
+use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class BookTeacherController extends Controller
 {
-    public function index()
+    public function index($id)
     {
-        $teacher_id= Auth::user()->id;
+        $id=1;
+        $teacher_id= User::where('id',$id)->first()->id;
+        $this->data['teacher_id']=$teacher_id;
+
+        // dd(Auth::user()->role);
         $schedules =  Schedule::where('teacher_id' , $teacher_id)->orderBy('level', 'asc')->get();
-        // dd($schedules);
         $count=[
             'mon_start'=>4,'tue_start'=>4,'wed_start'=>4,'thu_start'=>4,'fri_start'=>4,'sat_start'=>4,'sun_start'=>4,
             'mon_end'=>4,'tue_end'=>4,'wed_end'=>4,'thu_end'=>4,'fri_end'=>4,'sat_end'=>4,'sun_end'=>4
@@ -69,5 +73,11 @@ class BookTeacherController extends Controller
         // dd($this->data);
 
         return view('frontend.page-course',$this->data);
+    }
+
+    public function get_free_trail(Request $request)
+    {
+        // dd($request->all());
+        return 0;
     }
 }

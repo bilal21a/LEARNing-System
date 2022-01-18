@@ -27,7 +27,8 @@ Route::group(['namespace' => 'teacher'], function () {
 
 });
 
-Route::get('book_teacher', [BookTeacherController::class, 'index'])->name('book_teacher');
+Route::get('book_teacher/{id?}', [BookTeacherController::class, 'index'])->name('book_teacher');
+Route::post('get_free_trail', [BookTeacherController::class, 'get_free_trail'])->name('get_free_trail');
 
 
 
