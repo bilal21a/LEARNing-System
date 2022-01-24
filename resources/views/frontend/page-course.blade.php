@@ -359,7 +359,7 @@
                                     </button>
 
 
-                                    <span class="after_free_trail" style="display: none">Free Trail request has been submitted to instructor</span>
+                                    <span class="after_free_trail" style="display: none"></span>
                                 </div>
                             </div>
                         </div>
@@ -646,6 +646,7 @@
                     $('.free_trail_2').hide();
                     $('.days_block').hide();
                     $('.after_free_trail').show();
+                    $('.after_free_trail').text(response);
 
                     },
                     error: function(error) {

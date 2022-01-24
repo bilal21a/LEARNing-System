@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\BookedFreeTrail;
 use App\Models\HrsTime;
 use App\Models\Schedule;
+use Illuminate\Foundation\Auth\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -60,6 +62,11 @@ class DashboardController extends Controller
 
     public function free_trail()
     {
+        $free_trail = BookedFreeTrail::where('teacher_id',Auth::user()->id)->get();
+        foreach ($free_trail as $free){
+            $user=User::where('id',$free->student_id)->first()->name;
+        }
+        dd($free_trail);
         return view('frontend.teacher.free_trail');
     }
 }

@@ -97,7 +97,7 @@
                         <div class="el-panel">
                             <div class="el-panel-body">
                                 <div class="el-panel-title">
-                                    <h2>Resume & Skills</h2>
+                                    <h2>Free Trails Request</h2>
                                 </div>
                                 <div id="accordion">
                                     <h3>Section 1</h3>
