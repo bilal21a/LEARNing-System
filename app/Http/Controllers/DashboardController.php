@@ -62,10 +62,11 @@ class DashboardController extends Controller
 
     public function free_trail()
     {
-        $free_trail = BookedFreeTrail::where('teacher_id',Auth::user()->id)->get();
-        foreach ($free_trail as $free){
-            $user=User::where('id',$free->student_id)->first()->name;
-        }
+        $free_trail = DB::table('booked_free_trails as bft')->where('teacher_id',auth()->user()->id)
+        ->join('users as u', 'u.id', '=', 'bft.student_id')
+        ->select('u.name as StdName','bft.*')
+        ->get();
+
         dd($free_trail);
         return view('frontend.teacher.free_trail');
     }
