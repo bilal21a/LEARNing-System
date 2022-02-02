@@ -24,7 +24,7 @@ Route::group(['namespace' => 'teacher'], function () {
     Route::get('add_schedule', [DashboardController::class, 'index'])->name('add_schedule');
     Route::get('schedule_save_second/{field}/{time}/{time_data}', [DashboardController::class, 'schedule_save_second'])->name('schedule_save_second');
     Route::get('free_trail', [DashboardController::class, 'free_trail'])->name('free_trail');
-
+    Route::post('approve_trail', [DashboardController::class, 'approve_trail'])->name('approve_trail');
 });
 
 Route::get('book_teacher/{id?}', [BookTeacherController::class, 'index'])->name('book_teacher');
@@ -38,4 +38,3 @@ require __DIR__ . '/admin.php';
 Route::get('/home', function () {
     return view('home');
 })->middleware(['auth'])->name('home');
-

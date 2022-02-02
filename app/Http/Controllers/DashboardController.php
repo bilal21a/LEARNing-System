@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\FreeTrailMail;
 use App\Models\BookedFreeTrail;
 use App\Models\HrsTime;
 use App\Models\Schedule;
@@ -9,6 +10,7 @@ use Illuminate\Foundation\Auth\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 
 use function PHPUnit\Framework\isEmpty;
 
@@ -61,12 +63,36 @@ class DashboardController extends Controller
 
     public function free_trail()
     {
-        $free_trails = DB::table('booked_free_trails as bft')->where('teacher_id', auth()->user()->id)
+        $free_trails = DB::table('booked_free_trails as bft')->where('teacher_id', auth()->user()->id)->where('booked_status', 0)
             ->join('users as u', 'u.id', '=', 'bft.student_id')
             ->select('u.name as StdName', 'bft.*')
             ->get();
 
         // dd($free_trail);
         return view('frontend.teacher.free_trail', compact('free_trails'));
+    }
+
+    public function approve_trail(Request $request)
+    {
+        // dd($request->all());
+        $booked = BookedFreeTrail::where('student_id', $request->student_id);
+
+        $booked->update([
+            'time_assigned' => $request->time_assigned,
+            'booked_status' => 1,
+            'notify' => 1
+        ]);
+        $booked = $booked->first();
+        $To = User::find($booked->student_id)->first();
+        $From = User::find($booked->teacher_id)->first();
+
+
+        $details = [
+            'title' => $To->name . ' Free Trail',
+            'body' => $To->name . ' has approved your free trail Request on ' . $booked->date . '--' . $booked->time_assigned,
+        ];
+
+        Mail::to($To->email)->send(new FreeTrailMail($details));
+        return redirect()->back();
     }
 }
