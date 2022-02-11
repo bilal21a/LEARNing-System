@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\BookedFreeTrail;
 use App\Models\HrsTime;
 use App\Models\Schedule;
 use App\Models\User;
@@ -77,7 +78,26 @@ class BookTeacherController extends Controller
 
     public function get_free_trail(Request $request)
     {
-        // dd($request->all());
-        return 0;
+        if($request->day=="Mon")$day="monday";
+        if($request->day=="Tue")$day="tuesday";
+        if($request->day=="Wed")$day="wednesday";
+        if($request->day=="Thu")$day="thurday";
+        if($request->day=="Fri")$day="friday";
+        if($request->day=="Sat")$day="saturday";
+        if($request->day=="Sun")$day="sunday";
+
+        $day= "this ".$day;
+
+        $date = Carbon::parse($day)->toDateString();
+        $notify=0;
+        $booked_status=0;
+        $booked_free_trails=new BookedFreeTrail();
+        $booked_free_trails->student_id=$request->student_id;
+        $booked_free_trails->teacher_id=$request->teacher_id;
+        $booked_free_trails->booked_status=$booked_status;
+        $booked_free_trails->date=$date;
+        $booked_free_trails->notify=$notify;
+        $booked_free_trails->save();
+        return "Free Trial Request sent to instructor on ".$day." (".$date.") ";
     }
 }
