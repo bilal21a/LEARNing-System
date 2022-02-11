@@ -19,12 +19,15 @@ Route::get('/2', function () {
     return view('frontend.page-teacher');
 });
 
+Route::middleware(['auth:admin'])->group(function () {
+    Route::post('/logout', [AuthController::class, 'destroy'])->name('logout');
+    Route::view('/home', 'admin.index')->name('home');
+});
 
 Route::group(['namespace' => 'teacher'], function () {
     Route::get('add_schedule', [DashboardController::class, 'index'])->name('add_schedule');
     Route::get('schedule_save_second/{field}/{time}/{time_data}', [DashboardController::class, 'schedule_save_second'])->name('schedule_save_second');
     Route::get('free_trail', [DashboardController::class, 'free_trail'])->name('free_trail');
-
 });
 
 Route::get('book_teacher/{id?}', [BookTeacherController::class, 'index'])->name('book_teacher');
@@ -38,4 +41,3 @@ require __DIR__ . '/admin.php';
 Route::get('/home', function () {
     return view('home');
 })->middleware(['auth'])->name('home');
-
