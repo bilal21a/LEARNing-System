@@ -11,6 +11,6 @@ Route::prefix('admin')->middleware('theme:admin')->name('admin.')->group(functio
 
     Route::middleware(['auth:admin'])->group(function () {
         Route::post('/logout', [AuthController::class, 'destroy'])->name('logout');
-        Route::view('/home', 'admin.index')->name('home');
+        Route::view('/home', 'admin.dashboard')->name('home');
     });
 });
