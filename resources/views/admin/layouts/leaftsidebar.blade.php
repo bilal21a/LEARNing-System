@@ -38,7 +38,7 @@
                 </a>
                 <ul class="nav-main-submenu">
                     <li class="nav-main-item">
-                        <a class="nav-main-link" href="">
+                        <a class="nav-main-link" href="{{ route('admin.users') }}">
                             <i class="nav-main-link-icon fa fa-users"></i>
                             <span class="nav-main-link-name">All Users</span>
                         </a>
@@ -93,13 +93,13 @@
             </a>
         </li>
         <li class="nav-main-item">
-            <a class="nav-main-link" href="">
+            <a class="nav-main-link" href="{{ route('admin.rolespermission') }}">
                 <i class="nav-main-link-icon fa fa-tasks"></i>
                 <span class="nav-main-link-name">Roles & Permissions</span>
             </a>
         </li>
         <li class="nav-main-item">
-            <a class="nav-main-link" href="">
+            <a class="nav-main-link" href="{{ route('admin.permission') }}">
                 <i class="nav-main-link-icon fa fa-tasks"></i>
                 <span class="nav-main-link-name">Permissions</span>
             </a>
