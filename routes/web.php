@@ -35,10 +35,9 @@ Route::get('book_teacher/{id?}', [BookTeacherController::class, 'index'])->name(
 Route::post('get_free_trail', [BookTeacherController::class, 'get_free_trail'])->name('get_free_trail');
 
 
-
-require __DIR__ . '/auth.php';
-require __DIR__ . '/admin.php';
-
 Route::get('/home2', function () {
     return view('home');
 })->middleware(['auth'])->name('home2');
+
+require __DIR__ . '/auth.php';
+require __DIR__ . '/admin.php';

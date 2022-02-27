@@ -1,7 +1,6 @@
 @extends('admin.index')
 
 @section('css')
-
     <link href="{{ asset('js/plugins/datatables/dataTables.bootstrap4.css') }} " rel="stylesheet">
     <link href="{{ asset('js/plugins/datatables/buttons-bs4/buttons.bootstrap4.min.css') }} " rel="stylesheet">
 @endsection
@@ -43,17 +42,6 @@
                     <tbody>
                         @foreach ($user as $users)
                             <tr>
-                                {{-- <td class="text-center">
-
-                                    @if ($users->profile_pic)
-                                        <img class="img-avatar img-avatar48"
-                                            src="{{ asset('img/profile_image/' . $users->profile_pic) }}" alt="">
-                                    @else
-                                        <img class="img-avatar img-avatar48"
-                                            src="{{ asset('media/avatars/avatar7.jpg') }}" alt="">
-                                    @endif
-
-                                </td> --}}
                                 <td class="font-w600 font-size-sm">
                                     <a href="{{ url('admin/user_profile/' . $users->id) }}">{{ $users->name }}</a>
                                 </td>
@@ -64,11 +52,8 @@
                                     @php
                                         $my_role = $users->getRoleNames();
                                     @endphp
-                                    @if (isset($my_role[0]))
-                                        <span class="badge badge-info">{{ $my_role[0] }}</span>
-                                    @else
-                                        <span class="badge badge-danger">Guest</span>
-                                    @endif
+                                    <span class="badge badge-info">{{ $my_role[0] }}</span>
+
                                 </td>
                                 <?php
                                 $var_1 = $users->created_at;
@@ -189,7 +174,6 @@
                                 </div>
                             </div>
                             <!-- END Delte Modal -->
-
                         @endforeach
 
                     </tbody>
@@ -198,13 +182,9 @@
         </div>
     </div>
     <!-- END Dynamic Table Full -->
-
-
-
 @endsection
 
 @section('js')
-
     <script src="{{ asset('js/plugins/datatables/jquery.dataTables.min.js') }}"></script>
     <script src="{{ asset('js/plugins/datatables/dataTables.bootstrap4.min.js') }}"></script>
     <script src="{{ asset('js/plugins/datatables/buttons/dataTables.buttons.min.js') }}"></script>
@@ -213,6 +193,4 @@
     <script src="{{ asset('js/plugins/datatables/buttons/buttons.flash.min.js') }}"></script>
     <script src="{{ asset('js/plugins/datatables/buttons/buttons.colVis.min.js') }}"></script>
     <script src="{{ asset('js/pages/be_tables_datatables.min.js') }}"></script>
-
-
 @endsection

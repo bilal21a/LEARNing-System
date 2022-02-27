@@ -42,7 +42,8 @@ class DashboardController extends Controller
 
         $role = Role::findById($role);
         $user = User::find($id);
-        // dd($user);
+        // dd($user->roles->first());
+        $user->removeRole($user->roles->first());
         $user->assignRole($role);
 
         User::where('id', $id)->update([
@@ -54,7 +55,11 @@ class DashboardController extends Controller
     public function delete_users(Request $request)
     {
         $id = $request->id;
-        User::where('id', $id)->delete();
+        $user=User::find($id);
+        $user->removeRole($user->roles->first());
+        // dd("here");
+        $user->delete();
+
         return redirect()->back();
     }
     public function permission()
