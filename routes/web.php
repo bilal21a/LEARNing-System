@@ -15,9 +15,9 @@ use App\Http\Controllers\DashboardController;
 */
 
 
-Route::get('/2', function () {
-    return view('frontend.page-teacher');
-});
+Route::get('/', function () {
+    return view('frontend.home');
+})->name('home');
 
 Route::middleware(['auth:admin'])->group(function () {
     Route::post('/logout', [AuthController::class, 'destroy'])->name('logout');
@@ -39,6 +39,6 @@ Route::post('get_free_trail', [BookTeacherController::class, 'get_free_trail'])-
 require __DIR__ . '/auth.php';
 require __DIR__ . '/admin.php';
 
-Route::get('/home', function () {
+Route::get('/home2', function () {
     return view('home');
-})->middleware(['auth'])->name('home');
+})->middleware(['auth'])->name('home2');

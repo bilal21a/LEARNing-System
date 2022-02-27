@@ -41,7 +41,7 @@
                                         <div class="col el-flag">
                                             <div class="inner">
                                                 <a href="http://../page-departements.html">
-                                                    <img src="http://../assets/images/flags/uk.svg" alt="alt" />
+                                                    <img src="frontend/assets/images/flags/uk.svg" alt="alt" />
                                                     <span class="title">English</span>
                                                 </a>
                                             </div>
@@ -49,7 +49,7 @@
                                         <div class="col el-flag">
                                             <div class="inner">
                                                 <a href="http://../page-departements.html">
-                                                    <img src="http://../assets/images/flags/germany.svg" alt="alt" />
+                                                    <img src="frontend/assets/images/flags/germany.svg" alt="alt" />
                                                     <span class="title">Germany</span>
                                                 </a>
                                             </div>
@@ -57,7 +57,7 @@
                                         <div class="col el-flag">
                                             <div class="inner">
                                                 <a href="http://../page-departements.html">
-                                                    <img src="http://../assets/images/flags/france.svg" alt="alt" />
+                                                    <img src="frontend/assets/images/flags/france.svg" alt="alt" />
                                                     <span class="title">French</span>
                                                 </a>
                                             </div>
@@ -65,7 +65,7 @@
                                         <div class="col el-flag">
                                             <div class="inner">
                                                 <a href="http://../page-departements.html">
-                                                    <img src="http://../assets/images/flags/italy.svg" alt="alt" />
+                                                    <img src="frontend/assets/images/flags/italy.svg" alt="alt" />
                                                     <span class="title">Italian</span>
                                                 </a>
                                             </div>
@@ -73,7 +73,7 @@
                                         <div class="col el-flag">
                                             <div class="inner">
                                                 <a href="http://../page-departements.html">
-                                                    <img src="http://../assets/images/flags/spain.svg" alt="alt" />
+                                                    <img src="frontend/assets/images/flags/spain.svg" alt="alt" />
                                                     <span class="title">Spanish</span>
                                                 </a>
                                             </div>
@@ -81,7 +81,7 @@
                                         <div class="col el-flag">
                                             <div class="inner">
                                                 <a href="http://../page-departements.html">
-                                                    <img src="http://../assets/images/flags/portugal.svg" alt="alt" />
+                                                    <img src="frontend/assets/images/flags/portugal.svg" alt="alt" />
                                                     <span class="title">Portuguese</span>
                                                 </a>
                                             </div>
@@ -89,7 +89,7 @@
                                         <div class="col el-flag">
                                             <div class="inner">
                                                 <a href="http://../page-departements.html">
-                                                    <img src="http://../assets/images/flags/china.svg" alt="alt" />
+                                                    <img src="frontend/assets/images/flags/china.svg" alt="alt" />
                                                     <span class="title">Mandarin</span>
                                                 </a>
                                             </div>
@@ -97,7 +97,7 @@
                                         <div class="col el-flag">
                                             <div class="inner">
                                                 <a href="http://../page-departements.html">
-                                                    <img src="http://../assets/images/flags/japan.svg" alt="alt" />
+                                                    <img src="frontend/assets/images/flags/japan.svg" alt="alt" />
                                                     <span class="title">Japanese</span>
                                                 </a>
                                             </div>
@@ -105,7 +105,7 @@
                                         <div class="col el-flag">
                                             <div class="inner">
                                                 <a href="http://../page-departements.html">
-                                                    <img src="http://../assets/images/flags/south-korea.svg" alt="alt" />
+                                                    <img src="frontend/assets/images/flags/south-korea.svg" alt="alt" />
                                                     <span class="title">Korean</span>
                                                 </a>
                                             </div>
@@ -113,7 +113,7 @@
                                         <div class="col el-flag">
                                             <div class="inner">
                                                 <a href="http://../page-departements.html">
-                                                    <img src="http://../assets/images/flags/russia.svg" alt="alt" />
+                                                    <img src="frontend/assets/images/flags/russia.svg" alt="alt" />
                                                     <span class="title">Russian</span>
                                                 </a>
                                             </div>
@@ -121,7 +121,7 @@
                                         <div class="col el-flag">
                                             <div class="inner">
                                                 <a href="http://../page-departements.html">
-                                                    <img src="http://../assets/images/flags/india.svg" alt="alt" />
+                                                    <img src="frontend/assets/images/flags/india.svg" alt="alt" />
                                                     <span class="title">Hindi</span>
                                                 </a>
                                             </div>
@@ -129,7 +129,7 @@
                                         <div class="col el-flag">
                                             <div class="inner">
                                                 <a href="http://../page-departements.html">
-                                                    <img src="http://../assets/images/flags/arabic.svg" alt="alt" />
+                                                    <img src="frontend/assets/images/flags/arabic.svg" alt="alt" />
                                                     <span class="title">Arabic</span>
                                                 </a>
                                             </div>
@@ -137,7 +137,7 @@
                                         <div class="col el-flag">
                                             <div class="inner">
                                                 <a href="http://../page-departements.html">
-                                                    <img src="http://../assets/images/flags/iran.svg" alt="alt" />
+                                                    <img src="frontend/assets/images/flags/iran.svg" alt="alt" />
                                                     <span class="title">Persian</span>
                                                 </a>
                                             </div>
@@ -145,7 +145,7 @@
                                         <div class="col el-flag">
                                             <div class="inner">
                                                 <a href="http://../page-departements.html">
-                                                    <img src="http://../assets/images/flags/turkey.svg" alt="alt" />
+                                                    <img src="frontend/assets/images/flags/turkey.svg" alt="alt" />
                                                     <span class="title">Turkish</span>
                                                 </a>
                                             </div>
@@ -153,7 +153,7 @@
                                         <div class="col el-flag">
                                             <div class="inner">
                                                 <a href="http://../page-departements.html">
-                                                    <img src="http://../assets/images/flags/iran.svg" alt="alt" />
+                                                    <img src="frontend/assets/images/flags/iran.svg" alt="alt" />
                                                     <span class="title">Kurdish</span>
                                                 </a>
                                             </div>
@@ -161,7 +161,7 @@
                                         <div class="col el-flag">
                                             <div class="inner">
                                                 <a href="http://../page-departements.html">
-                                                    <img src="http://../assets/images/flags/vietnam.svg" alt="alt" />
+                                                    <img src="frontend/assets/images/flags/vietnam.svg" alt="alt" />
                                                     <span class="title">Vietnamese</span>
                                                 </a>
                                             </div>
@@ -169,7 +169,7 @@
                                         <div class="col el-flag">
                                             <div class="inner">
                                                 <a href="http://../page-departements.html">
-                                                    <img src="http://../assets/images/flags/india.svg" alt="alt" />
+                                                    <img src="frontend/assets/images/flags/india.svg" alt="alt" />
                                                     <span class="title">Urdu</span>
                                                 </a>
                                             </div>
@@ -177,7 +177,7 @@
                                         <div class="col el-flag">
                                             <div class="inner">
                                                 <a href="http://../page-departements.html">
-                                                    <img src="http://../assets/images/flags/poland.svg" alt="alt" />
+                                                    <img src="frontend/assets/images/flags/poland.svg" alt="alt" />
                                                     <span class="title">Polish</span>
                                                 </a>
                                             </div>
@@ -185,7 +185,7 @@
                                         <div class="col el-flag">
                                             <div class="inner">
                                                 <a href="http://../page-departements.html">
-                                                    <img src="http://../assets/images/flags/israel.svg" alt="alt" />
+                                                    <img src="frontend/assets/images/flags/israel.svg" alt="alt" />
                                                     <span class="title">Hebrew</span>
                                                 </a>
                                             </div>
@@ -193,7 +193,7 @@
                                         <div class="col el-flag">
                                             <div class="inner">
                                                 <a href="http://../page-departements.html">
-                                                    <img src="http://../assets/images/flags/bangladesh.svg" alt="alt" />
+                                                    <img src="frontend/assets/images/flags/bangladesh.svg" alt="alt" />
                                                     <span class="title">Bengali</span>
                                                 </a>
                                             </div>
@@ -326,12 +326,12 @@
                                                 <p class="title">Other Pages</p>
                                                 <ul>
                                                     <li>
-                                                        <a href="http://../page-login.html">
+                                                        <a href="{{ route('login') }}">
                                                             <span class="text">Sign-In</span>
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="http://../page-register.html">
+                                                        <a href="{{ route('register') }}">
                                                             <span class="text">Sign-Up</span>
                                                         </a>
                                                     </li>
@@ -364,10 +364,10 @@
                 </a>
             </div>
             <div class="header-links">
-                <a href="http://../page-login.html" class="button button-md button-line-primary">
+                <a href="{{ route('login') }}" class="button button-md button-line-primary">
                     <span class="title">Sign In</span>
                 </a>
-                <a href="http://../page-register.html" class="button button-md button-primary">
+                <a href="{{ route('register') }}" class="button button-md button-primary">
                     <span class="title">Sign Up</span>
                 </a>
             </div>
@@ -379,7 +379,7 @@
 <div class="app-sidenav app-sidenav-1">
     <div class="sidenav-menu">
         <div class="sidenav-head">
-            <img src="../../..//assets/images/sidenav.jpg" alt="sidenav banner" />
+            <img src="frontend/assets/images/sidenav.jpg" alt="sidenav banner" />
             <button class="button button-close-sidenav"></button>
         </div>
         <div class="sidenav-body">
@@ -527,7 +527,7 @@
                                 <li class="el-flag">
                                     <div class="inner">
                                         <a href="http://../page-departements.html">
-                                            <img src="http://../assets/images/flags/uk.svg" alt="alt" />
+                                            <img src="frontend/assets/images/flags/uk.svg" alt="alt" />
                                             <h3>English</h3>
                                         </a>
                                     </div>
@@ -535,7 +535,7 @@
                                 <li class="el-flag">
                                     <div class="inner">
                                         <a href="http://../page-departements.html">
-                                            <img src="http://../assets/images/flags/germany.svg" alt="alt" />
+                                            <img src="frontend/assets/images/flags/germany.svg" alt="alt" />
                                             <h3>German</h3>
                                         </a>
                                     </div>
@@ -543,7 +543,7 @@
                                 <li class="el-flag">
                                     <div class="inner">
                                         <a href="http://../page-departements.html">
-                                            <img src="http://../assets/images/flags/france.svg" alt="alt" />
+                                            <img src="frontend/assets/images/flags/france.svg" alt="alt" />
                                             <h3>French</h3>
                                         </a>
                                     </div>
@@ -551,7 +551,7 @@
                                 <li class="el-flag">
                                     <div class="inner">
                                         <a href="http://../page-departements.html">
-                                            <img src="http://../assets/images/flags/italy.svg" alt="alt" />
+                                            <img src="frontend/assets/images/flags/italy.svg" alt="alt" />
                                             <h3>Italian</h3>
                                         </a>
                                     </div>
@@ -559,7 +559,7 @@
                                 <li class="el-flag">
                                     <div class="inner">
                                         <a href="http://../page-departements.html">
-                                            <img src="http://../assets/images/flags/china.svg" alt="alt" />
+                                            <img src="frontend/assets/images/flags/china.svg" alt="alt" />
                                             <h3>Chinese</h3>
                                         </a>
                                     </div>
@@ -567,7 +567,7 @@
                                 <li class="el-flag">
                                     <div class="inner">
                                         <a href="http://../page-departements.html">
-                                            <img src="http://../assets/images/flags/japan.svg" alt="alt" />
+                                            <img src="frontend/assets/images/flags/japan.svg" alt="alt" />
                                             <h3>Japanese</h3>
                                         </a>
                                     </div>
@@ -575,7 +575,7 @@
                                 <li class="el-flag">
                                     <div class="inner">
                                         <a href="http://../page-departements.html">
-                                            <img src="http://../assets/images/flags/south-korea.svg" alt="alt" />
+                                            <img src="frontend/assets/images/flags/south-korea.svg" alt="alt" />
                                             <h3>Korean</h3>
                                         </a>
                                     </div>
@@ -583,7 +583,7 @@
                                 <li class="el-flag">
                                     <div class="inner">
                                         <a href="http://../page-departements.html">
-                                            <img src="http://../assets/images/flags/russia.svg" alt="alt" />
+                                            <img src="frontend/assets/images/flags/russia.svg" alt="alt" />
                                             <h3>Russian</h3>
                                         </a>
                                     </div>
@@ -591,7 +591,7 @@
                                 <li class="el-flag">
                                     <div class="inner">
                                         <a href="http://../page-departements.html">
-                                            <img src="http://../assets/images/flags/arabic.svg" alt="alt" />
+                                            <img src="frontend/assets/images/flags/arabic.svg" alt="alt" />
                                             <h3>Arabic</h3>
                                         </a>
                                     </div>
@@ -599,7 +599,7 @@
                                 <li class="el-flag">
                                     <div class="inner">
                                         <a href="http://../page-departements.html">
-                                            <img src="http://../assets/images/flags/turkey.svg" alt="alt" />
+                                            <img src="frontend/assets/images/flags/turkey.svg" alt="alt" />
                                             <h3>Turkish</h3>
                                         </a>
                                     </div>
@@ -607,7 +607,7 @@
                                 <li class="el-flag">
                                     <div class="inner">
                                         <a href="http://../page-departements.html">
-                                            <img src="http://../assets/images/flags/iran.svg" alt="alt" />
+                                            <img src="frontend/assets/images/flags/iran.svg" alt="alt" />
                                             <h3>Persian</h3>
                                         </a>
                                     </div>
@@ -615,7 +615,7 @@
                                 <li class="el-flag">
                                     <div class="inner">
                                         <a href="http://../page-departements.html">
-                                            <img src="http://../assets/images/flags/spain.svg" alt="alt" />
+                                            <img src="frontend/assets/images/flags/spain.svg" alt="alt" />
                                             <h3>Spanish</h3>
                                         </a>
                                     </div>
